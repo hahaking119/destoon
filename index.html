@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Destoon B2B网站系统|B2B(电子商务)行业门户解决方案</title>
+<meta name="keywords" content="B2B网站系统,B2B行业门户系统,B2B解决方案,Destoon,B2B,电子商务"/>
+<meta name="description" content="Destoon B2B网站系统是基于PHP+MySQL的B2B(电子商务)行业门户解决方案"/>
+<meta name="generator" content="Destoon B2B,www.destoon.com"/>
+<meta http-equiv="x-ua-compatible" content="ie=7"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="bookmark" href="/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/skin/default/style.css"/>
+<script type="text/javascript">window.onerror= function(){return true;}</script><script type="text/javascript" src="/lang/zh-cn/lang.js"></script>
+<script type="text/javascript" src="/file/script/config.js"></script>
+<script type="text/javascript" src="/file/script/common.js"></script>
+<script type="text/javascript" src="/file/script/page.js"></script>
+</head>
+<body>
+<div class="top">
+	<div class="top_div">
+		<div class="f_r" id="destoon_member"></div>
+		<div>
+		<img src="/skin/default/image/vip.gif" alt="VIP标识" align="absmiddle"/><a href="/member/grade.php"><span class="f_red">上网做生意，首选VIP会员</span></a>
+		 | <script type="text/javascript">addFav('收藏本页');</script>
+		 | <a href="/wap/">WAP浏览</a>		 | <a href="/feed/">RSS订阅</a> <img src="/skin/default/image/free.gif" width="23" height="12" alt=""/>		</div>
+	</div>
+</div>
+<div class="m">
+	<div class="f_l logo"><a href="/"><img src="/skin/default/image/logo.gif" alt="Destoon B2B网站管理系统"/></a></div>
+	<div class="f_l banner"><a href="/extend/redirect.php?aid=1" target="_blank"><img src="/skin/default/image/banner.gif" width="468" height="60" alt="Destoon专用VPS主机"/></a></div>
+	<div class="f_l btntool">
+		<a href="/member/"><img src="/skin/default/image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
+		<span>商务中心</span></a>
+	</div>
+	<div class="f_l btntool">
+		<a href="/member/my.php"><img src="/skin/default/image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
+		<span>发布信息</span></a>
+	</div>
+	<div class="f_l btntool">
+		<a href="/spread/"><img src="/skin/default/image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
+		<span>排名推广</span></a>
+	</div>
+</div>
+<div class="m">
+	<div class="menu_l">&nbsp;</div>
+	<div class="menu_b">
+		<div class="menu">
+		<ul><li class="menuon"><a href="/"><span>首页</span></a></li><li><a href="/sell/"><span>供应</span></a></li><li><a href="/buy/"><span>求购</span></a></li><li><a href="/quote/"><span>行情</span></a></li><li><a href="/company/"><span>公司</span></a></li><li><a href="/exhibit/"><span>展会</span></a></li><li><a href="/news/"><span>资讯</span></a></li><li><a href="/invest/"><span>招商</span></a></li><li><a href="/brand/"><span>品牌</span></a></li><li><a href="/job/"><span>人才</span></a></li><li><a href="/know/"><span>知道</span></a></li><li><a href="/special/"><span>专题</span></a></li><li><a href="/photo/"><span>图库</span></a></li><li><a href="/video/"><span>视频</span></a></li><li><a href="/down/"><span>下载</span></a></li></ul>
+		</div>
+		<div>
+			<div class="search_l">
+																<script type="text/javascript">var searchid = 5;</script>
+				<div id="search_module" style="display:none;" onmouseout="Dh('search_module');" onmouseover="Ds('search_module');">
+				<a href="javascript:void(0);" onclick="setModule('供应','5')">供应</a><a href="javascript:void(0);" onclick="setModule('求购','6')">求购</a><a href="javascript:void(0);" onclick="setModule('行情','7')">行情</a><a href="javascript:void(0);" onclick="setModule('公司','4')">公司</a><a href="javascript:void(0);" onclick="setModule('展会','8')">展会</a><a href="javascript:void(0);" onclick="setModule('资讯','21')">资讯</a><a href="javascript:void(0);" onclick="setModule('招商','22')">招商</a><a href="javascript:void(0);" onclick="setModule('品牌','13')">品牌</a><a href="javascript:void(0);" onclick="setModule('人才','9')">人才</a><a href="javascript:void(0);" onclick="setModule('知道','10')">知道</a><a href="javascript:void(0);" onclick="setModule('专题','11')">专题</a><a href="javascript:void(0);" onclick="setModule('图库','12')">图库</a><a href="javascript:void(0);" onclick="setModule('视频','14')">视频</a><a href="javascript:void(0);" onclick="setModule('下载','15')">下载</a>				</div>
+				<div id="search_tips" style="display:none;"></div>
+				<form id="destoon_search" action="/search.php" onsubmit="return Dsearch();">
+				<input type="hidden" name="moduleid" value="5" id="destoon_moduleid"/>
+				&nbsp;&nbsp;&nbsp;
+				<input type="text" id="destoon_select" class="search_s" value="供应" readonly onfocus="this.blur();" onclick="Ds('search_module');"/>
+				&nbsp;&nbsp;
+				<input name="kw" id="destoon_kw" type="text" class="search_i" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>
+				&nbsp;&nbsp;
+				<input type="image" src="/skin/default/image/search.gif" align="absmiddle"/>
+				&nbsp;
+				<a href="/sell/search.php" id="destoon_search_m"><img src="/skin/default/image/search_m.gif" width="50" height="20" align="absmiddle"/></a>
+				</form>
+			</div>
+			<div class="search_r">
+				<div id="search_word"><strong>热门搜索：</strong> </div>
+			</div>
+		</div>
+	</div>
+	<div class="menu_r">&nbsp;</div>
+</div>
+<div class="m b10">&nbsp;</div><link rel="stylesheet" type="text/css" href="/skin/default/index.css"/>
+<div class="m">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr align="center">
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A1"/></td>
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A2"/></td>
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A3"/></td>
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A4"/></td>
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A5"/></td>
+<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A6"/></td>
+</tr>
+</table>
+</div>
+<div class="m b10">&nbsp;</div>
+<div class="m">
+	<div class="m_l f_l">
+		<table width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+		<td width="240" valign="top">
+						<div class="quote_head">
+			<span class="f_r">
+			<form action="/quote/price.php" onsubmit="return quote_search();">
+			<input type="text" size="12" value="输入产品名" name="kw" id="quote_kw" class="quote_head_i" onclick="if(this.value=='输入产品名')this.value='';"/> <input type="image" src="/skin/default/image/btn_quote.gif" align="absmiddle"/>
+			</form>
+			</span>
+			<div><a href="/quote/price.php?product=all" class="w"><strong>行情速递</strong></a></div>
+			</div>
+			<div class="quote_body">
+				<div id="quote_0" style="height:140px;overflow:hidden;">
+				<div id="quote_1">
+								<ul>
+								<li><span class="f_r">&nbsp;1100.00 元 / 台</span><a href="/sell/show.php?itemid=1" target="_blank" title="[北京] 戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔STREAK10英寸平板电脑</a></li>
+								</ul>
+				</div>
+				</div>
+			</div>
+					</td>
+		<td>&nbsp;</td>
+		<td width="400" valign="top">
+		<div><script type="text/javascript">
+var pics = "skin/default/image/player_1.jpg|skin/default/image/player_2.jpg";
+var links = "/|http://www.destoon.com";
+var texts = "|";
+document.write('<embed src="/file/flash/player.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts=&borderwidth=400&borderheight=160&textheight=0" menu="false" bgcolor="#FFFFFF" quality="high" width="400" height="160" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" extendspage="http://get.adobe.com/flashplayer/"></embed>');
+</script>
+</div>
+		<div class="announce"><a href="/announce/"><strong>公告栏：</strong></a> <a href=" " id="printAnnounce" target="_blank"></a></div>
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r f_l">
+				<script type="text/javascript">
+var user_auth = get_cookie('auth');
+</script>
+<div class="user">
+	<script type="text/javascript">document.write(user_auth ? '<div>' : '<div style="display:none;">');</script>
+		<div class="user_wel">您好，欢迎回来</div>
+		<div class="user_do">
+		<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td><img src="/member/image/ico_edit.gif" align="absmiddle"/> <a href="/member/my.php">发布供求信息</a></td>
+		<td><img src="/member/image/ico_product.gif" align="absmiddle"/> <a href="/spread/">推广企业产品</a></td>
+		</tr>
+		<tr>
+		<td><img src="/member/image/ico_homepage.gif" align="absmiddle"/> <a href="/member/home.php">管理企业商铺</a></td>
+		<td><img src="/member/image/ico_message.gif" align="absmiddle"/> <a href="/member/message.php">查看站内留言</a></td>
+		</tr>
+		<tr>
+		<td><img src="/member/image/ico_trade.gif" align="absmiddle"/> <a href="/member/trade.php">管理买卖交易</a></td>
+		<td><img src="/member/image/ico_record.gif" align="absmiddle"/> <a href="/member/record.php">查看资金流水</a></td>
+		</tr>
+		<tr>
+		<td><img src="/member/image/ico_profile.gif" align="absmiddle"/> <a href="/member/edit.php?tab=2">完善企业资料</a></td>
+		<td><img src="/member/image/ico_home.gif" align="absmiddle"/> <a href="/member/">进入商务中心</a></td>
+		</tr>
+		</table>
+		</div>
+	</div>
+	<script type="text/javascript">document.write(user_auth ? '<div style="display:none;">' : '<div>');</script>
+		<div class="user_login">
+			<form action="/member/login.php" method="post" onsubmit="return user_login();">
+			<input type="hidden" name="submit" value="1"/>
+			<input name="username" id="user_name" type="text" value="会员名/Email" onfocus="if(this.value=='会员名/Email')this.value='';" class="user_input"/>&nbsp; 
+			<input name="password" id="user_pass" type="password" value="password" onfocus="if(this.value=='password')this.value='';" class="user_input"/>&nbsp; 
+			<input type="image" src="/skin/default/image/user_login.gif" align="absmiddle"/>
+			</form>
+		</div>
+		<div class="user_tip">免费注册为会员后，您可以...</div>
+		<div class="user_can">
+		<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+		<td><img src="/member/image/ico_edit.gif" align="absmiddle"/> 发布供求信息</td>
+		<td><img src="/member/image/ico_product.gif" align="absmiddle"/> 推广企业产品</td>
+		</tr>
+		<tr>
+		<td><img src="/member/image/ico_homepage.gif" align="absmiddle"/> 建立企业商铺</td>
+		<td><img src="/member/image/ico_message.gif" align="absmiddle"/> 在线洽谈生意</td>
+		</tr>
+		</table>
+		</div>
+		<div class="user_reg"><a href="/member/register.php"><img src="/skin/default/image/user_reg.gif" width="260" height="26" alt="还不是会员，立即免费注册"/></a></div>
+	</div>
+	<div class="user_foot">&nbsp;</div>
+</div>			</div>
+</div>
+
+<div class="m b10"></div>
+
+<div class="m">
+	<div class="m_l f_l">
+				<table width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+		<td width="320" valign="top">
+			<div class="trade_head"><span class="f_r c_p"><a href="/member/my.php?action=add&mid=5"><img src="/skin/default/image/ico_page_add.gif" width="18" height="18" title="发布供应信息" alt=""/></a>&nbsp;<img src="/skin/default/image/ico_page_pre.gif" width="18" height="18"  title="上一页" alt="" onclick="ipage('sell', '-');"/>&nbsp;<img src="/skin/default/image/ico_page_nxt.gif" width="18" height="18"  title="下一页" alt="" onclick="ipage('sell', '+');"/></span><a href="/sell/"><strong>供应信息</strong></a></div>
+			<div class="trade_body" id="isell"><ul>
+<li><span class="f_r">[北京]</span><span class="px11">[08-28]</span>&nbsp;<a href="/sell/show.php?itemid=1" target="_blank" title="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔（DELL）STREAK 10 PRO 10英寸平板电脑</a></li>
+</ul></div>
+		</td>
+		<td width="10">&nbsp;</td>
+		<td valign="top">
+			<div class="trade_head"><span class="f_r c_p"><a href="/member/my.php?action=add&mid=6"><img src="/skin/default/image/ico_page_add.gif" width="18" height="18" title="发布求购信息" alt=""/></a>&nbsp;<img src="/skin/default/image/ico_page_pre.gif" width="18" height="18" title="上一页" alt="" onclick="ipage('buy', '-');"/>&nbsp;<img src="/skin/default/image/ico_page_nxt.gif" width="18" height="18" title="下一页" alt="" onclick="ipage('buy', '+');"/></span><a href="/buy/"><strong>求购信息</strong></a></div>
+			<div class="trade_body" id="ibuy"></div>
+		</td>
+		</tr>
+		</table>
+			</div>
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r f_l">
+			<div class="tab_head">
+		<ul>
+			<li class="tab_2" id="com_t_1" onmouseover="Tb(1, 2, 'com', 'tab');"><a href="/company/">VIP企业</a></li>
+			<li class="tab_1" id="com_t_2" onmouseover="Tb(2, 2, 'com', 'tab');"><a href="/company/">最新企业</a></li>
+			<li>&nbsp;&nbsp;&nbsp;<a href="/member/grade.php" class="f_n">我如何加入?</a></li>
+		</ul>
+		</div>
+		<div class="box_body li_dot">
+			<div id="com_c_1" style="display:">
+			<ul>
+<li><span class="f_r f_gray">北京</span><a href="/index.php?homepage=angf" target="_blank">angf公司</a></li>
+</ul>
+			</div>
+			<div id="com_c_2" style="display:none">
+			<ul>
+<li><span class="f_r f_gray">北京</span><a href="/index.php?homepage=angf" target="_blank">angf公司</a></li>
+</ul>
+			</div>
+		</div>
+			</div>
+</div>
+
+<div class="m b10"></div>
+
+<div class="m">
+	<div class="m_l f_l">
+				<div class="tab_head_2">
+		<ul>
+			<li class="tab_2_2" id="product_t_1" onmouseover="Tb(1, 3, 'product', 'tab_2');"><a href="/sell/"><span>推荐产品</span></a></li>
+			<li class="tab_2_1" id="product_t_2" onmouseover="Tb(2, 3, 'product', 'tab_2');"><a href="/sell/"><span>最新产品</span></a></li>
+			<li class="tab_2_1" id="product_t_3" onmouseover="Tb(3, 3, 'product', 'tab_2');"><a href="/sell/"><span>热门产品</span></a></li>
+		</ul>
+		</div>
+		<div class="tab_body_2 product">
+			<div id="product_c_1" style="display:">
+			<table width="100%">
+</table>
+			</div>
+			<div id="product_c_2" style="display:none">
+			<table width="100%">
+<tr align="center"><td valign="top"><a href="/sell/show.php?itemid=1" target="_blank"><img src="/file/upload/201108/28/09-54-15-89-2.jpg.thumb.jpg" width="80" height="80" alt="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑"/></a>
+<ul><li><a href="/sell/show.php?itemid=1" target="_blank">戴尔STREAK10英</a></li></ul></td>
+</table>
+			</div>
+			<div id="product_c_3" style="display:none">
+			<table width="100%">
+</table>
+			</div>
+		</div>
+			</div>
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r f_l">
+				<div class="box_head_1"><div><span class="f_r"><a href="/news/">更多..</a></span><a href="/news/"><strong>行业资讯</strong></a></div></div>
+		<div class="box_body c_b">
+				<div class="headline">
+				</div>
+						<table width="100%" cellspacing="2" cellpadding="2" class="newsr">
+		<tr>
+		<td valign="top" width="120" class="imb"><table width="100%">
+</table>
+</td>
+		<td valign="top"><ul>
+</ul>
+</td>
+		</tr>
+		</table>
+				<div class="li_dot f_gray">
+		<ul>
+</ul>
+</div>
+		</div>
+			</div>
+</div>
+
+<div class="m b10"></div>
+
+<div class="m">
+	<div class="m_l f_l">
+				<link rel="stylesheet" type="text/css" href="/skin/default/catalog.css" />		<div class="catalog_menu">
+			<div class="f_r"><a href="/member/my.php?action=add&mid=5" target="_blank" id="iadd"><img src="/skin/default/image/btn_add.gif" width="81" height="20" title="发布信息" alt="" onmouseover="this.src='/skin/default/image/btn_add_on.gif';" onmouseout="this.src='/skin/default/image/btn_add.gif';"/></a></div>
+			<div>
+				<ul>
+					<li id="catalog_0" class="catalog_on" onclick="catalog(0);">供应</li>
+					<li id="catalog_1" class="catalog_li" onclick="catalog(1);">求购</li>
+					<li id="catalog_2" class="catalog_li" onclick="catalog(2);">公司</li>
+				</ul>
+			</div>
+		</div>
+				<div class="catalog_letter">
+			<div>拼音索引</div>
+			<ul>
+							<li id="index_a" class="catalog_letter_li" onmouseover="index_timer('a');" onmouseout="index_out();">a</li>
+							<li id="index_b" class="catalog_letter_li" onmouseover="index_timer('b');" onmouseout="index_out();">b</li>
+							<li id="index_c" class="catalog_letter_li" onmouseover="index_timer('c');" onmouseout="index_out();">c</li>
+							<li id="index_d" class="catalog_letter_li" onmouseover="index_timer('d');" onmouseout="index_out();">d</li>
+							<li id="index_e" class="catalog_letter_li" onmouseover="index_timer('e');" onmouseout="index_out();">e</li>
+							<li id="index_f" class="catalog_letter_li" onmouseover="index_timer('f');" onmouseout="index_out();">f</li>
+							<li id="index_g" class="catalog_letter_li" onmouseover="index_timer('g');" onmouseout="index_out();">g</li>
+							<li id="index_h" class="catalog_letter_li" onmouseover="index_timer('h');" onmouseout="index_out();">h</li>
+							<li id="index_i" class="catalog_letter_li" onmouseover="index_timer('i');" onmouseout="index_out();">i</li>
+							<li id="index_j" class="catalog_letter_li" onmouseover="index_timer('j');" onmouseout="index_out();">j</li>
+							<li id="index_k" class="catalog_letter_li" onmouseover="index_timer('k');" onmouseout="index_out();">k</li>
+							<li id="index_l" class="catalog_letter_li" onmouseover="index_timer('l');" onmouseout="index_out();">l</li>
+							<li id="index_m" class="catalog_letter_li" onmouseover="index_timer('m');" onmouseout="index_out();">m</li>
+							<li id="index_n" class="catalog_letter_li" onmouseover="index_timer('n');" onmouseout="index_out();">n</li>
+							<li id="index_o" class="catalog_letter_li" onmouseover="index_timer('o');" onmouseout="index_out();">o</li>
+							<li id="index_p" class="catalog_letter_li" onmouseover="index_timer('p');" onmouseout="index_out();">p</li>
+							<li id="index_q" class="catalog_letter_li" onmouseover="index_timer('q');" onmouseout="index_out();">q</li>
+							<li id="index_r" class="catalog_letter_li" onmouseover="index_timer('r');" onmouseout="index_out();">r</li>
+							<li id="index_s" class="catalog_letter_li" onmouseover="index_timer('s');" onmouseout="index_out();">s</li>
+							<li id="index_t" class="catalog_letter_li" onmouseover="index_timer('t');" onmouseout="index_out();">t</li>
+							<li id="index_u" class="catalog_letter_li" onmouseover="index_timer('u');" onmouseout="index_out();">u</li>
+							<li id="index_v" class="catalog_letter_li" onmouseover="index_timer('v');" onmouseout="index_out();">v</li>
+							<li id="index_w" class="catalog_letter_li" onmouseover="index_timer('w');" onmouseout="index_out();">w</li>
+							<li id="index_x" class="catalog_letter_li" onmouseover="index_timer('x');" onmouseout="index_out();">x</li>
+							<li id="index_y" class="catalog_letter_li" onmouseover="index_timer('y');" onmouseout="index_out();">y</li>
+							<li id="index_z" class="catalog_letter_li" onmouseover="index_timer('z');" onmouseout="index_out();">z</li>
+						</ul>
+		</div>
+				<div class="dsn" id="catalog_index" onmouseout="index_leave(this, event);"></div>
+		<div class="catalog c_b">		
+		<div id="catalog">
+										<table width="100%" cellspacing="0" cellspacing="0">
+						<tr>		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=1" target="_blank" class="px15"><strong>供应默认分类</strong></a>
+					</p>
+				</td>
+								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=4" target="_blank" class="px15"><strong>机械行业</strong></a>
+					</p>
+				</td>
+		</tr>				<tr bgcolor="#FAFCFE">		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=5" target="_blank" class="px15"><strong>服装行业</strong></a>
+					</p>
+				</td>
+								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=6" target="_blank" class="px15"><strong>I T行业</strong></a>
+					</p>
+				</td>
+		</tr>				<tr>		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=7" target="_blank" class="px15"><strong>物流行业</strong></a>
+					</p>
+				</td>
+								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
+		<p>
+			<a href="/sell/list.php?catid=8" target="_blank" class="px15"><strong>陶瓷制作</strong></a>
+					</p>
+				</td>
+		</tr>				</table>		</div>
+		</div>
+		<div class="b10 c_b"></div>
+						<div class="box_head"><div><span class="f_r"><a href="/brand/">更多..</a></span><a href="/brand/"><strong>品牌展示</strong></a></div></div>
+		<div class="box_body">
+		<div class="thumb"><table width="100%">
+</table>
+</div>
+		</div>
+		<div class="b10">&nbsp;</div>
+						<div class="box_head"><div><span class="f_r"><a href="/exhibit/">更多..</a></span><a href="/exhibit/"><strong>行业展会</strong></a></div></div>
+		<div class="box_body li_dot">
+			<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+			<td valign="top" width="495">
+								<ul>
+								</ul>			
+			</td>
+			<td> </td>
+			<td valign="top" width="155">
+				<div class="b5">&nbsp;</div>
+				<img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页展会A1"/>				<div class="b5">&nbsp;</div>
+				<img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页展会A2"/>			
+			</td>
+			</tr>
+			</table>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="tab_head">
+		<ul>
+			<li class="tab_2" id="job_t_1" onmouseover="Tb(1, 2, 'job', 'tab');"><a href="/job/">招聘信息</a></li>
+			<li class="tab_1" id="job_t_2" onmouseover="Tb(2, 2, 'job', 'tab');"><a href="/job/">求职简历</a></li>
+		</ul>
+		</div>
+		<div class="box_body">
+			<div id="job_c_1" style="display:">
+			<table cellpadding="3" cellspacing="3" width="100%">
+	
+</table>			</div>
+			<div id="job_c_2" style="display:none">
+			<table cellpadding="3" cellspacing="3" width="100%">
+	
+</table>			</div>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head"><div><span class="f_r"><a href="/photo/">更多..</a></span><a href="/photo/"><strong>图片中心</strong></a></div></div>
+		<div class="box_body">
+		<div class="thumb"><table width="100%">
+</table>
+</div>
+		</div>
+		<div class="b10">&nbsp;</div>
+			</div>
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r f_l">
+
+				<div class="box_head_1"><div><span class="f_r"><a href="/company/news.php?more=1">更多..</a></span><a href="/company/news.php?more=1"><strong>企业新闻</strong></a></div></div>
+		<div class="box_body li_dot f_gray">
+		<ul>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head_1"><div><span class="f_r"><a href="/special/">更多..</a></span><a href="/special/"><strong>最新专题</strong></a></div></div>
+		<div class="box_body li_dot f_gray">
+		<ul>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head_1"><div><span class="f_r"><a href="/quote/">更多..</a></span><a href="/quote/"><strong>行情报价</strong></a></div></div>
+		<div class="box_body li_dot f_gray">
+		<ul>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head_1"><div><span class="f_r"><a href="/invest/">更多..</a></span><a href="/invest/"><strong>招商代理</strong></a></div></div>
+		<div class="box_body li_dot f_gray">
+		<ul>
+<li><span class="f_r">08-28</span><a href="/invest/show.php?itemid=1" target="_blank" title="angf公司 招聘笔记本代理">angf公司 招聘笔记本代理</a></li>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head_1"><div><span class="f_r"><a href="/video/">更多..</a></span><a href="/video/"><strong>推荐视频</strong></a></div></div>
+		<div class="box_body f_gray video">
+		<ul>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				
+		<div class="box_head_1"><div><span class="f_r"><a href="/know/">更多..</a></span><a href="/know/"><strong>行业知道</strong></a></div></div>
+		<div class="box_body li_dot f_gray">
+				<ul>
+				</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+						
+		<div class="box_head_1"><div><span class="f_r"><a href="/down/">更多..</a></span><a href="/down/"><strong>资料下载</strong></a></div></div>
+		<div class="box_body f_gray">
+		<ul>
+</ul>
+		</div>
+		<div class="b10">&nbsp;</div>
+		
+				<div class="box_head_1"><div><span class="f_r"><a href="/vote/">更多..</a></span><a href="/vote/"><strong>投票调查</strong></a></div></div>
+		<div class="box_body"></div>
+		<div class="b10">&nbsp;</div>
+			</div>
+</div>
+<div class="m">
+	<div class="tab_head">
+	<ul>
+		<li class="tab_2"><a href="/link/">友情链接</a></li>
+		<li class="tab_1"><a href="/link/index.php?action=reg">申请链接</a></li>
+	</ul>
+	</div>
+	<div class="box_body">
+		<table width="100%" cellpadding="3" cellspacing="3">
+<tr><td width="11.11%"><a href=" http://www.destoon.com" target="_blank" title="Destoon B2B网站管理系统"><img src=" http://www.destoon.com/logo.gif" width="88" height="31" alt="Destoon B2B"/></a></td>
+</table>
+			<table width="100%" cellpadding="3" cellspacing="3">
+</table>
+		</div>
+</div>
+<script type="text/javascript">
+var curls = ['/sell/','/buy/','/company/'];
+var member_myurl = '/member/my.php';
+</script>
+<script type="text/javascript" src="/file/script/index.js"></script>
+<script type="text/javascript" src="/file/script/quote.js"></script>
+<script type="text/javascript">
+var announcetitle = new Array(); 
+var announcehref = new Array(); 
+announcetitle[0] = '暂无公告';
+announcehref[0] = DTPath;
+showannounce();
+</script>
+<div class="m">
+	<div class="b10">&nbsp;</div>
+	<div class="foot_search">
+		<div class="foot_search_m" id="foot_search_m">
+		<span id="foot_search_m_5" onclick="setFModule(5)" class="f_b">供应</span> | <span id="foot_search_m_6" onclick="setFModule(6)" class="">求购</span> | <span id="foot_search_m_7" onclick="setFModule(7)" class="">行情</span> | <span id="foot_search_m_4" onclick="setFModule(4)" class="">公司</span> | <span id="foot_search_m_8" onclick="setFModule(8)" class="">展会</span> | <span id="foot_search_m_21" onclick="setFModule(21)" class="">资讯</span> | <span id="foot_search_m_22" onclick="setFModule(22)" class="">招商</span> | <span id="foot_search_m_13" onclick="setFModule(13)" class="">品牌</span> | <span id="foot_search_m_9" onclick="setFModule(9)" class="">人才</span> | <span id="foot_search_m_10" onclick="setFModule(10)" class="">知道</span> | <span id="foot_search_m_11" onclick="setFModule(11)" class="">专题</span> | <span id="foot_search_m_12" onclick="setFModule(12)" class="">图库</span> | <span id="foot_search_m_14" onclick="setFModule(14)" class="">视频</span> | <span id="foot_search_m_15" onclick="setFModule(15)" class="">下载</span> | 		</div>
+		<div>
+		<form id="foot_search" action="/search.php" onsubmit="return Fsearch();">
+		<input type="hidden" name="moduleid" value="5" id="foot_moduleid"/>
+		<input type="text" name="kw" class="foot_search_i" id="foot_kw" value="请输入关键词" onfocus="if(this.value=='请输入关键词') this.value='';"/>&nbsp;&nbsp;
+		<input type="submit" class="foot_search_s" id="foot_search_s" value="搜索"/>
+		</form>
+		</div>
+	</div>
+	<div class="b10">&nbsp;</div>
+</div>
+<div class="m">
+	<div class="foot">
+		<div>
+		<a href="/">网站首页</a>
+		| <a href="/extend/copyright.html">版权隐私</a> 
+| <a href="/extend/agreement.html">使用协议</a> 
+| <a href="/extend/contact.html">联系方式</a> 
+| <a href="/extend/about.html">关于我们</a> 
+		| <a href="/sitemap/">网站地图</a>
+		 | <a href="/link/">友情链接</a>		 | <a href="/guestbook/">网站留言</a>		 | <a href="/ad/">广告服务</a>				</div>
+		&copy;2008-2010 DESTOON B2B SYSTEM All Rights Reserved<br/><span id="powered"><a href="http://www.destoon.com" target="_blank"><strong>Powered by Destoon 3.0</strong></a></span>
+	</div>
+</div>
+<script type="text/javascript">
+	document.write('<script type="text/javascript" src="/api/task.js.php?moduleid=1&html=index&refresh='+Math.random()+'.js"></sc'+'ript>');
+</script>
+ </body>
+</html>
