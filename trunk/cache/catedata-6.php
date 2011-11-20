@@ -1,1 +1,1 @@
-<?php defined('IN_DESTOON') or exit('Access Denied'); return array (2 => array ('template' => '','show_template' => '','seo_title' => '','seo_keywords' => '','seo_description' => '','group_list' => '','group_show' => '','group_add' => '',),); ?>
+<?php defined('IN_DESTOON') or exit('Access Denied'); return array (2 => array ('template' => '','show_template' => '','seo_title' => '液压机','seo_keywords' => '液压机','seo_description' => '液压机','group_list' => '1,3,5,6,7','group_show' => '1,3,5,6,7','group_add' => '1,3,5,6,7',),); ?>

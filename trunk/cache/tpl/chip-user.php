@@ -47,7 +47,7 @@ var user_auth = get_cookie('auth');
 		</tr>
 		</table>
 		</div>
-		<div class="user_reg"><a href="<?php echo $MODULE['2']['linkurl'];?><?php echo $DT['file_register'];?>"><img src="<?php echo DT_SKIN;?>image/user_reg.gif" width="260" height="26" alt="还不是会员，立即免费注册"/></a></div>
+		<div class="user_reg"><a href="<?php echo $MODULE['2']['linkurl'];?><?php echo $DT['file_register'];?>"><img src="<?php echo DT_SKIN;?>image/user_reg.gif" width="213" height="26" alt="还不是会员，立即免费注册"/></a></div>
 	</div>
 	<div class="user_foot">&nbsp;</div>
 </div>

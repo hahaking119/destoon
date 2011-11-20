@@ -1,0 +1,1 @@
+<?php defined('IN_DESTOON') or exit('Access Denied'); return array (23 => array ('catid' => '23','catname' => '液压行业','style' => '','catdir' => 'yeyaxingye','domain' => '','linkurl' => 'list.php?catid=23','letter' => 'y','level' => '1','parentid' => '0','arrparentid' => '0','child' => '0','arrchildid' => '','listorder' => '23',),); ?>

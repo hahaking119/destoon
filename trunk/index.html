@@ -10,6 +10,7 @@
 <link rel="shortcut icon" href="/favicon.ico"/>
 <link rel="bookmark" href="/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="/skin/default/style.css"/>
+<link rel="stylesheet" type="text/css" href="/skin/default/wuji_header.css"/>
 <script type="text/javascript">window.onerror= function(){return true;}</script><script type="text/javascript" src="/lang/zh-cn/lang.js"></script>
 <script type="text/javascript" src="/file/script/config.js"></script>
 <script type="text/javascript" src="/file/script/common.js"></script>
@@ -25,38 +26,173 @@
 		 | <a href="/wap/">WAP浏览</a>		 | <a href="/feed/">RSS订阅</a> <img src="/skin/default/image/free.gif" width="23" height="12" alt=""/>		</div>
 	</div>
 </div>
-<div class="m">
-	<div class="f_l logo"><a href="/"><img src="/skin/default/image/logo.gif" alt="Destoon B2B网站管理系统"/></a></div>
-	<div class="f_l banner"><a href="/extend/redirect.php?aid=1" target="_blank"><img src="/skin/default/image/banner.gif" width="468" height="60" alt="Destoon专用VPS主机"/></a></div>
-	<div class="f_l btntool">
-		<a href="/member/"><img src="/skin/default/image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
-		<span>商务中心</span></a>
+
+
+
+<!--head begin-->
+<div class="head">
+	<div class="head_left">
+		<div class="logo ">
+		  <a href="/">
+           <img src="/skin/default/image/logo.gif" >
+          </a>
+		</div>
 	</div>
-	<div class="f_l btntool">
-		<a href="/member/my.php"><img src="/skin/default/image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
-		<span>发布信息</span></a>
+	<div class="head_right">
+		<div class="search-barhead">
+			<div class="searchboxhead">
+				<div class="search">
+					<div class="search_t">
+						<ul>
+							<li  class="cur"> <a href="/sell/" title="供应 " >商品</a></li>
+							<li > <a href="/buy/"     title="求购" >求购</a></li>
+							<li > <a href="/company/" title="公司" >商家</a></li>
+							<li ><a href="/news/"    title="资讯" >资讯</a></li>
+                            <li ><a href="/know/"    title="知道" >知道</a></li>
+						</ul>
+						<div class="search_ph">
+                           <a href="search.php" id="destoon_search_m"><img src="/skin/default/image/gaoji_search.jpg" width="80" height="20" align="absmiddle"/></a>
+                        </div>
+					</div>
+					<div class="searchC">
+                    <form id="destoon_search" action="/search.php" onsubmit="return Dsearch();">
+                    					            				                                <input type="hidden" name="moduleid" value="5" id="destoon_moduleid"/>	
+                        <input name="kw" id="destoon_kw" type="text" class="word" size="48" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>						
+						<input type="submit" value="" class="image_button" >
+                    </form>
+					</div>
+				</div>
+			</div>
+			<p class="memo">
+                <strong>热门搜索：</strong>
+				             </p>
+		</div>	
 	</div>
-	<div class="f_l btntool">
-		<a href="/spread/"><img src="/skin/default/image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
-		<span>排名推广</span></a>
-	</div>
+        <div class="f_l btntool">
+            <a href="/member/"><img src="/skin/default/image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
+            <span>商务中心</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="/member/my.php"><img src="/skin/default/image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
+            <span>发布信息</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="/spread/"><img src="/skin/default/image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
+            <span>排名推广</span></a>
+        </div>
+	<div class="clear"></div>
 </div>
-<div class="m">
+<!--head end-->
+
+
+
+
+
+<!--nav begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="menu_l">&nbsp;</div>
+	<div class="menu_b">
+		<!--mainmenu begin-->
+		<div class="menu">
+	     <ul>
+           <li class="menuon"><a href="/"><span>首页</span></a></li><li><a href="/zhanye_zixun/">
+           <span>专业咨询</span></a></li><li><a href="/news/">
+           <span>厂商资讯</span></a></li><li><a href="/company/">
+           <span>商家集群</span></a></li><li><a href="/buy/">
+           <span>招标求购</span></a></li><li><a href="http://www.baidu.com" target="_blank">
+           <span>网站建设</span></a></li><li><a href="http://www.bing.com" target="_blank">
+           <span>科技论坛</span></a></li><li><a href="http://www.sian.com/" target="_blank">
+           <span>行业微博</span></a></li><li><a href="/invest/">
+           <span>无界招商</span></a></li><li><a href="/exhibit/">
+           <span>行业展会</span></a></li><li><a href="/quote/">
+           <span>行情</span></a></li><li><a href="/brand/">
+           <span>品牌</span></a></li><li><a href="/job/">
+           <span>人才</span></a></li><li><a href="/know/">
+           <span>知道</span></a></li><li><a href="/special/">
+           <span>专题</span></a></li><li><a href="/photo/">
+           <span>图库</span></a></li><li><a href="/video/">
+           <span>视频</span></a></li><li><a href="/down/">
+           <span>下载</span></a></li><li><a href="/sell/">
+           <span>商品</span></a></li>         </ul>
+		</div>
+		<!--mainmenu end-->
+		
+		<!-- 小类栏目列表开始 -->
+		<div class="zlm">
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		</div>
+		<!-- 小类栏目列表结束 -->
+	</div>
+	<div class="menu_r">&nbsp;</div>
+	<div class="clear"></div>
+</div>
+<!--nav end-->
+
+
+
+
+<!--<div class="m">
 	<div class="menu_l">&nbsp;</div>
 	<div class="menu_b">
 		<div class="menu">
-		<ul><li class="menuon"><a href="/"><span>首页</span></a></li><li><a href="/sell/"><span>供应</span></a></li><li><a href="/buy/"><span>求购</span></a></li><li><a href="/quote/"><span>行情</span></a></li><li><a href="/company/"><span>公司</span></a></li><li><a href="/exhibit/"><span>展会</span></a></li><li><a href="/news/"><span>资讯</span></a></li><li><a href="/invest/"><span>招商</span></a></li><li><a href="/brand/"><span>品牌</span></a></li><li><a href="/job/"><span>人才</span></a></li><li><a href="/know/"><span>知道</span></a></li><li><a href="/special/"><span>专题</span></a></li><li><a href="/photo/"><span>图库</span></a></li><li><a href="/video/"><span>视频</span></a></li><li><a href="/down/"><span>下载</span></a></li></ul>
+		<ul>
+          <li class="menuon"><a href="/"><span>首页</span></a></li><li><a href="/zhanye_zixun/">
+          <span>专业咨询</span></a></li><li><a href="/news/">
+          <span>厂商资讯</span></a></li><li><a href="/company/">
+          <span>商家集群</span></a></li><li><a href="/buy/">
+          <span>招标求购</span></a></li><li><a href="http://www.baidu.com" target="_blank">
+          <span>网站建设</span></a></li><li><a href="http://www.bing.com" target="_blank">
+          <span>科技论坛</span></a></li><li><a href="http://www.sian.com/" target="_blank">
+          <span>行业微博</span></a></li><li><a href="/invest/">
+          <span>无界招商</span></a></li><li><a href="/exhibit/">
+          <span>行业展会</span></a></li><li><a href="/quote/">
+          <span>行情</span></a></li><li><a href="/brand/">
+          <span>品牌</span></a></li><li><a href="/job/">
+          <span>人才</span></a></li><li><a href="/know/">
+          <span>知道</span></a></li><li><a href="/special/">
+          <span>专题</span></a></li><li><a href="/photo/">
+          <span>图库</span></a></li><li><a href="/video/">
+          <span>视频</span></a></li><li><a href="/down/">
+          <span>下载</span></a></li><li><a href="/sell/">
+          <span>商品</span></a></li>        </ul>
 		</div>
 		<div>
 			<div class="search_l">
 																<script type="text/javascript">var searchid = 5;</script>
 				<div id="search_module" style="display:none;" onmouseout="Dh('search_module');" onmouseover="Ds('search_module');">
-				<a href="javascript:void(0);" onclick="setModule('供应','5')">供应</a><a href="javascript:void(0);" onclick="setModule('求购','6')">求购</a><a href="javascript:void(0);" onclick="setModule('行情','7')">行情</a><a href="javascript:void(0);" onclick="setModule('公司','4')">公司</a><a href="javascript:void(0);" onclick="setModule('展会','8')">展会</a><a href="javascript:void(0);" onclick="setModule('资讯','21')">资讯</a><a href="javascript:void(0);" onclick="setModule('招商','22')">招商</a><a href="javascript:void(0);" onclick="setModule('品牌','13')">品牌</a><a href="javascript:void(0);" onclick="setModule('人才','9')">人才</a><a href="javascript:void(0);" onclick="setModule('知道','10')">知道</a><a href="javascript:void(0);" onclick="setModule('专题','11')">专题</a><a href="javascript:void(0);" onclick="setModule('图库','12')">图库</a><a href="javascript:void(0);" onclick="setModule('视频','14')">视频</a><a href="javascript:void(0);" onclick="setModule('下载','15')">下载</a>				</div>
+				<a href="javascript:void(0);" onclick="setModule('专业咨询','23')">专业咨询</a><a href="javascript:void(0);" onclick="setModule('厂商资讯','21')">厂商资讯</a><a href="javascript:void(0);" onclick="setModule('商家集群','4')">商家集群</a><a href="javascript:void(0);" onclick="setModule('招标求购','6')">招标求购</a><a href="javascript:void(0);" onclick="setModule('无界招商','22')">无界招商</a><a href="javascript:void(0);" onclick="setModule('行业展会','8')">行业展会</a><a href="javascript:void(0);" onclick="setModule('行情','7')">行情</a><a href="javascript:void(0);" onclick="setModule('品牌','13')">品牌</a><a href="javascript:void(0);" onclick="setModule('人才','9')">人才</a><a href="javascript:void(0);" onclick="setModule('知道','10')">知道</a><a href="javascript:void(0);" onclick="setModule('专题','11')">专题</a><a href="javascript:void(0);" onclick="setModule('图库','12')">图库</a><a href="javascript:void(0);" onclick="setModule('视频','14')">视频</a><a href="javascript:void(0);" onclick="setModule('下载','15')">下载</a><a href="javascript:void(0);" onclick="setModule('商品','5')">商品</a>				</div>
 				<div id="search_tips" style="display:none;"></div>
 				<form id="destoon_search" action="/search.php" onsubmit="return Dsearch();">
 				<input type="hidden" name="moduleid" value="5" id="destoon_moduleid"/>
 				&nbsp;&nbsp;&nbsp;
-				<input type="text" id="destoon_select" class="search_s" value="供应" readonly onfocus="this.blur();" onclick="Ds('search_module');"/>
+				<input type="text" id="destoon_select" class="search_s" value="商品" readonly onfocus="this.blur();" onclick="Ds('search_module');"/>
 				&nbsp;&nbsp;
 				<input name="kw" id="destoon_kw" type="text" class="search_i" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>
 				&nbsp;&nbsp;
@@ -66,66 +202,123 @@
 				</form>
 			</div>
 			<div class="search_r">
-				<div id="search_word"><strong>热门搜索：</strong> </div>
+				<div id="search_word"><strong>热门搜索：</strong> <!--</div>
 			</div>
 		</div>
 	</div>
 	<div class="menu_r">&nbsp;</div>
-</div>
-<div class="m b10">&nbsp;</div><link rel="stylesheet" type="text/css" href="/skin/default/index.css"/>
-<div class="m">
-<table width="100%" cellspacing="0" cellpadding="0">
-<tr align="center">
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A1"/></td>
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A2"/></td>
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A3"/></td>
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A4"/></td>
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A5"/></td>
-<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页旗帜A6"/></td>
-</tr>
-</table>
-</div>
+</div>-->
 <div class="m b10">&nbsp;</div>
+
+
+<link rel="stylesheet" type="text/css" href="/skin/default/index.css"/>
 <div class="m">
-	<div class="m_l f_l">
-		<table width="100%" cellspacing="0" cellpadding="0">
-		<tr>
-		<td width="240" valign="top">
-						<div class="quote_head">
-			<span class="f_r">
-			<form action="/quote/price.php" onsubmit="return quote_search();">
-			<input type="text" size="12" value="输入产品名" name="kw" id="quote_kw" class="quote_head_i" onclick="if(this.value=='输入产品名')this.value='';"/> <input type="image" src="/skin/default/image/btn_quote.gif" align="absmiddle"/>
-			</form>
-			</span>
-			<div><a href="/quote/price.php?product=all" class="w"><strong>行情速递</strong></a></div>
-			</div>
-			<div class="quote_body">
-				<div id="quote_0" style="height:140px;overflow:hidden;">
-				<div id="quote_1">
-								<ul>
-								<li><span class="f_r">&nbsp;1100.00 元 / 台</span><a href="/sell/show.php?itemid=1" target="_blank" title="[北京] 戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔STREAK10英寸平板电脑</a></li>
-								</ul>
-				</div>
-				</div>
-			</div>
-					</td>
-		<td>&nbsp;</td>
-		<td width="400" valign="top">
-		<div><script type="text/javascript">
-var pics = "skin/default/image/player_1.jpg|skin/default/image/player_2.jpg";
-var links = "/|http://www.destoon.com";
+    <table width="100%" cellspacing="0" cellpadding="0">
+        <tr align="center">
+            <td><a href="http://www.taobao.com" target="_blank"><img src="/skin/default/image/spacer.gif" width="960" height="150" alt="" style="position:absolute;z-index:2;"/></a><embed src="http://img.uu1001.cn/wrappler_swf3/2011-10-04/e7/97/25564219_56f5bdef40573bdaa654893361651752_960x150.swf" quality="high" loop="false" extendspage="http://get.adobe.com/flashplayer/" type="application/x-shockwave-flash" wmode="transparent" width="960" height="150"></embed>
+</td>
+            <!--<td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>
+            <td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>
+            <td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>
+            <td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>
+            <td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>
+            <td><img src="skin/default/image/150x60.gif" width="150" height="60" alt=""/></td>-->
+        </tr>
+    </table>
+</div>
+
+<!--first module begin-->
+<div class="m">
+	<div class="m_n f_l">&nbsp;</div>
+	<div style="width:962px;float:left;">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tbody><tr>
+		<td width="350" valign="top" align="left">
+			<!--轮播 begin-->
+			<!--广告flash begin-->
+		      <div><script type="text/javascript">
+var pics = "/file/upload/201111/18/22-31-43-70-1.jpg|/file/upload/201110/02/15-56-58-92-1.jpg";
+var links = "http://www.taobao.com|http://www.bing.com";
 var texts = "|";
-document.write('<embed src="/file/flash/player.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts=&borderwidth=400&borderheight=160&textheight=0" menu="false" bgcolor="#FFFFFF" quality="high" width="400" height="160" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" extendspage="http://get.adobe.com/flashplayer/"></embed>');
+document.write('<embed src="/file/flash/player.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts=&borderwidth=350&borderheight=425&textheight=0" menu="false" bgcolor="#FFFFFF" quality="high" width="350" height="425" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" extendspage="http://get.adobe.com/flashplayer/"></embed>');
 </script>
 </div>
-		<div class="announce"><a href="/announce/"><strong>公告栏：</strong></a> <a href=" " id="printAnnounce" target="_blank"></a></div>
+		      <div class="announce"><a href="/announce/"><strong>公告栏：</strong></a> <a href=" " id="printAnnounce" target="_blank"></a></div>
+              <!--广告flash end-->
+			<!--轮播 end-->
 		</td>
-		</tr>
-		</table>
-	</div>
-	<div class="m_n f_l">&nbsp;</div>
-	<div class="m_r f_l">
-				<script type="text/javascript">
+		<td width="10">&nbsp;</td>
+		<td width="350" valign="top">
+			<!--tNews begin-->
+			<div class="tNews">
+
+                    <div class="iTit"> 
+           <a href="/news/show.php?itemid=4"><span style="color:#FF6600">2010-2011年中国液压劈材机投资咨询报告</span></a>
+      </div>
+      <div class="iTitcontent"> <a href="/news/show.php?itemid=4">《2010-2011年中国液压劈材机投资咨询报告》是由中国市场监测中心与中国市场研究中心的研究人员根据国家统计机构、市场监测数据库、...</a>         </div>
+             
+                <!--首页咨询_调用start-->
+		           <table width="100%">
+      <tr align="center">	 		
+		<td width="50%" valign="top"><a href="/news/show.php?itemid=4"><img src="/file/upload/201110/04/14-22-50-46-1.jpg" width="110" height="90" alt="2010-2011年中国液压劈材机投资咨询报告 (图)"/></a>
+			<ul>
+			<li><a href="/news/show.php?itemid=4">&lt;span style=&quot;c...</a></li>
+						</ul>
+		</td>
+	  		
+		<td width="50%" valign="top"><a href="/news/show.php?itemid=3"><img src="/file/upload/201110/04/14-20-55-54-1.jpg" width="110" height="90" alt="液压系统中控制阀所起的作用及优、缺点 (图)"/></a>
+			<ul>
+			<li><a href="/news/show.php?itemid=3">液压系统中控制...</a></li>
+						</ul>
+		</td>
+	  		
+		<td width="50%" valign="top"><a href="/news/show.php?itemid=2"><img src="/file/upload/201110/04/14-20-35-64-1.jpg" width="110" height="90" alt="液压油缸出现动作错误的几个原因 (图)"/></a>
+			<ul>
+			<li><a href="/news/show.php?itemid=2">液压油缸出现动...</a></li>
+						</ul>
+		</td>
+	  	</tr></table>
+                <!--首页咨询_调用end-->
+				<table width="95%" align="center" style="margin-top:15px">
+					<tbody>
+
+						<tr>
+                        		<td width="240" valign="top">
+                                                                <div class="quote_head">
+                                <span class="f_r">
+                                <form action="/quote/price.php" onsubmit="return quote_search();">
+                                <input type="text" size="12" value="输入产品名" name="kw" id="quote_kw" class="quote_head_i" onclick="if(this.value=='输入产品名')this.value='';"/> <input type="image" src="/skin/default/image/btn_quote.gif" align="absmiddle"/>
+                                </form>
+                                </span>
+                                <div><a href="/quote/price.php?product=all" class="w"><strong>行情速递</strong></a></div>
+                                </div>
+                                <div class="quote_body">
+                                    <div id="quote_0" style="height:120px; width:335px;overflow:hidden;">
+                                    <div id="quote_1">
+                                                                        <ul>
+                                                                        <li><span class="f_r">&nbsp;10000.00 元 / 个</span><a href="/sell/show.php?itemid=7" target="_blank" title="[北京] 供应轴向柱塞泵">供应轴向柱塞泵</a></li>
+                                                                        <li><span class="f_r">&nbsp;10000.00 元 / 个</span><a href="/sell/show.php?itemid=6" target="_blank" title="[北京] 供应电磁换向阀">供应电磁换向阀</a></li>
+                                                                        <li><span class="f_r">&nbsp;10000.00 元 / 个</span><a href="/sell/show.php?itemid=5" target="_blank" title="[北京] 供应线圈体">供应线圈体</a></li>
+                                                                        <li><span class="f_r">&nbsp;10000.00 元 / 个</span><a href="/sell/show.php?itemid=4" target="_blank" title="[北京] 供应放顶煤液压支架用缸">供应放顶煤液压支架用缸</a></li>
+                                                                        <li><span class="f_r">&nbsp;200000.00 元 / 件</span><a href="/sell/show.php?itemid=2" target="_blank" title="[江西新余市] 液压设备|液压配件|液压系统">液压机</a></li>
+                                                                        <li><span class="f_r">&nbsp;1000.00 元 / 个</span><a href="/sell/show.php?itemid=3" target="_blank" title="[北京] 液压机液压机液压机液压机液压机">液压机</a></li>
+                                                                        <li><span class="f_r">&nbsp;1100.00 元 / 台</span><a href="/sell/show.php?itemid=1" target="_blank" title="[北京] 戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔STREAK10英寸平板电脑</a></li>
+                                                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                                                            </td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>	
+			<!--tNews end-->
+		</td>
+		<td width="10">&nbsp;</td>
+		<td width="260" valign="top">
+			<!--登录 begin-->
+                <div class="m_r_wujie f_l">
+                                        <script type="text/javascript">
 var user_auth = get_cookie('auth');
 </script>
 <div class="user">
@@ -174,301 +367,1445 @@ var user_auth = get_cookie('auth');
 		</tr>
 		</table>
 		</div>
-		<div class="user_reg"><a href="/member/register.php"><img src="/skin/default/image/user_reg.gif" width="260" height="26" alt="还不是会员，立即免费注册"/></a></div>
+		<div class="user_reg"><a href="/member/register.php"><img src="/skin/default/image/user_reg.gif" width="213" height="26" alt="还不是会员，立即免费注册"/></a></div>
 	</div>
 	<div class="user_foot">&nbsp;</div>
-</div>			</div>
-</div>
-
-<div class="m b10"></div>
-
-<div class="m">
-	<div class="m_l f_l">
-				<table width="100%" cellspacing="0" cellpadding="0">
-		<tr>
-		<td width="320" valign="top">
-			<div class="trade_head"><span class="f_r c_p"><a href="/member/my.php?action=add&mid=5"><img src="/skin/default/image/ico_page_add.gif" width="18" height="18" title="发布供应信息" alt=""/></a>&nbsp;<img src="/skin/default/image/ico_page_pre.gif" width="18" height="18"  title="上一页" alt="" onclick="ipage('sell', '-');"/>&nbsp;<img src="/skin/default/image/ico_page_nxt.gif" width="18" height="18"  title="下一页" alt="" onclick="ipage('sell', '+');"/></span><a href="/sell/"><strong>供应信息</strong></a></div>
-			<div class="trade_body" id="isell"><ul>
-<li><span class="f_r">[北京]</span><span class="px11">[08-28]</span>&nbsp;<a href="/sell/show.php?itemid=1" target="_blank" title="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔（DELL）STREAK 10 PRO 10英寸平板电脑</a></li>
-</ul></div>
-		</td>
-		<td width="10">&nbsp;</td>
-		<td valign="top">
-			<div class="trade_head"><span class="f_r c_p"><a href="/member/my.php?action=add&mid=6"><img src="/skin/default/image/ico_page_add.gif" width="18" height="18" title="发布求购信息" alt=""/></a>&nbsp;<img src="/skin/default/image/ico_page_pre.gif" width="18" height="18" title="上一页" alt="" onclick="ipage('buy', '-');"/>&nbsp;<img src="/skin/default/image/ico_page_nxt.gif" width="18" height="18" title="下一页" alt="" onclick="ipage('buy', '+');"/></span><a href="/buy/"><strong>求购信息</strong></a></div>
-			<div class="trade_body" id="ibuy"></div>
-		</td>
-		</tr>
-		</table>
-			</div>
-	<div class="m_n f_l">&nbsp;</div>
-	<div class="m_r f_l">
-			<div class="tab_head">
-		<ul>
-			<li class="tab_2" id="com_t_1" onmouseover="Tb(1, 2, 'com', 'tab');"><a href="/company/">VIP企业</a></li>
-			<li class="tab_1" id="com_t_2" onmouseover="Tb(2, 2, 'com', 'tab');"><a href="/company/">最新企业</a></li>
-			<li>&nbsp;&nbsp;&nbsp;<a href="/member/grade.php" class="f_n">我如何加入?</a></li>
-		</ul>
-		</div>
-		<div class="box_body li_dot">
-			<div id="com_c_1" style="display:">
-			<ul>
+</div>                                    </div>
+             
+			<!--登录 end-->
+	
+			<!--信息 begin-->
+                <div class="m_n f_l">&nbsp;</div>
+                <div class="m_r_wujie f_l">
+                                    <div class="tab_head2">
+                        <ul>
+                            <li class="tab_2" id="com_t_1" onmouseover="Tb(1, 2, 'com', 'tab');"><a href="/company/">VIP企业</a></li>
+                            <li class="tab_1" id="com_t_2" onmouseover="Tb(2, 2, 'com', 'tab');"><a href="/company/">最新企业</a></li>
+                            <li >&nbsp;&nbsp;&nbsp;<a href="/member/grade.php" class="f_n">我如何加入?</a></li>
+                        </ul>
+                    </div>
+                    <div class="box_body li_dot">
+                        <div id="com_c_1" style="display:">
+                        <ul>
 <li><span class="f_r f_gray">北京</span><a href="/index.php?homepage=angf" target="_blank">angf公司</a></li>
 </ul>
-			</div>
-			<div id="com_c_2" style="display:none">
-			<ul>
+                        </div>
+                        <div id="com_c_2" style="display:none">
+                        <ul>
+<li><span class="f_r f_gray">江西</span><a href="/index.php?homepage=123123" target="_blank">北京无界液压</a></li>
+<li><span class="f_r f_gray">上海</span><a href="/index.php?homepage=usausa111" target="_blank">toto(个人)</a></li>
 <li><span class="f_r f_gray">北京</span><a href="/index.php?homepage=angf" target="_blank">angf公司</a></li>
 </ul>
-			</div>
-		</div>
-			</div>
-</div>
-
-<div class="m b10"></div>
-
-<div class="m">
-	<div class="m_l f_l">
-				<div class="tab_head_2">
-		<ul>
-			<li class="tab_2_2" id="product_t_1" onmouseover="Tb(1, 3, 'product', 'tab_2');"><a href="/sell/"><span>推荐产品</span></a></li>
-			<li class="tab_2_1" id="product_t_2" onmouseover="Tb(2, 3, 'product', 'tab_2');"><a href="/sell/"><span>最新产品</span></a></li>
-			<li class="tab_2_1" id="product_t_3" onmouseover="Tb(3, 3, 'product', 'tab_2');"><a href="/sell/"><span>热门产品</span></a></li>
-		</ul>
-		</div>
-		<div class="tab_body_2 product">
-			<div id="product_c_1" style="display:">
-			<table width="100%">
-</table>
-			</div>
-			<div id="product_c_2" style="display:none">
-			<table width="100%">
-<tr align="center"><td valign="top"><a href="/sell/show.php?itemid=1" target="_blank"><img src="/file/upload/201108/28/09-54-15-89-2.jpg.thumb.jpg" width="80" height="80" alt="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑"/></a>
-<ul><li><a href="/sell/show.php?itemid=1" target="_blank">戴尔STREAK10英</a></li></ul></td>
-</table>
-			</div>
-			<div id="product_c_3" style="display:none">
-			<table width="100%">
-</table>
-			</div>
-		</div>
-			</div>
-	<div class="m_n f_l">&nbsp;</div>
-	<div class="m_r f_l">
-				<div class="box_head_1"><div><span class="f_r"><a href="/news/">更多..</a></span><a href="/news/"><strong>行业资讯</strong></a></div></div>
-		<div class="box_body c_b">
-				<div class="headline">
-				</div>
-						<table width="100%" cellspacing="2" cellpadding="2" class="newsr">
-		<tr>
-		<td valign="top" width="120" class="imb"><table width="100%">
-</table>
-</td>
-		<td valign="top"><ul>
-</ul>
-</td>
-		</tr>
+                        </div>
+                    </div>
+                                </div>
+			<!--信息 end-->
+		</td>
+		</tr></tbody>
 		</table>
+	</div>	
+	<div class="clear"></div>
+</div>
+<!--first module end-->
+
+
+<div class="m b10">&nbsp;</div>
+
+<!--信息中心title begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="title_box1 white">
+		<div class="title_box2_1">
+			<a href="" class="fr">更多&gt;&gt;</a> 
+			<span class="fr p0_30"><a href="#">信息文字</a> <a href="#">信息文字</a> <a href="#">信息文字</a> <a href="#">信息文字</a></span> 
+		</div>
+	</div>
+</div>
+<!--信息中心title end-->
+
+
+
+<!--信息中心con begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	
+	<!--精彩专题 begin-->
+	<div class="m_r_2 f_l">
+		<div class="modBoxA">
+			<div class="thA thA_bg">
+				<span class="mark"><a href="#">图文视频</a></span>
+				<span class="f_r_p"><a href="#">更多&gt;&gt;</a></span>
+			</div>
+			<div class="box_body c_b">
+			   <table width="100%" cellspacing="2" cellpadding="2">
+    <tbody>
+       <tr><td valign="top" class="imb">
+	<table width="100%">
+	    <tbody>
+		<tr align="center">
+				    <td width="50%" valign="top">		       <a href="/photo/show.php?itemid=4">
+		           <img src="/file/upload/201110/07/12-04-59-65-1.jpg" width="135" height="100" alt="童年的时光 (2图)"/>
+		       </a>
+		       <ul><li><a href="/photo/show.php?itemid=4"><span style="color:#800000">童年的时光</span></a></li></ul>
+		    </td>		 		    <td width="50%" valign="top">		       <a href="/photo/show.php?itemid=3">
+		           <img src="/file/upload/201110/06/16-27-14-27-1.jpg" width="135" height="100" alt="液压机 使用专题 (4图)"/>
+		       </a>
+		       <ul><li><a href="/photo/show.php?itemid=3"><span style="color:#993300">液压机 使用专题</span></a></li></ul>
+		    </td>		 	         </tr>
+	     </tbody>
+          </table>
+	</td></tr>
+     </tbody>
+</table>				
+				<div style="padding-top:10px;padding-bottom:0px;" class="newsr2"></div>
 				<div class="li_dot f_gray">
-		<ul>
+					<ul>
+	<li>
+	<span class="f_r">2011-10-07</span>
+	        <a href="/photo/show.php?itemid=4" target="_blank" title="童年的时光" class="konw_a"><span style="color:#800000">童年的时光</span></a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-06</span>
+	        <a href="/photo/show.php?itemid=3" target="_blank" title="液压机 使用专题" class="konw_a"><span style="color:#993300">液压机 使用专题</span></a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-06</span>
+	        <a href="/photo/show.php?itemid=2" target="_blank" title="供应轴向柱塞泵" class="konw_a"><span style="color:#FF0000">供应轴向柱塞泵</span></a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-06</span>
+	        <a href="/photo/show.php?itemid=1" target="_blank" title="供应电磁换向阀" class="konw_a"><span style="color:#800000">供应电磁换向阀</span></a>
+        </li>
+	
 </ul>
-</div>
-		</div>
-			</div>
-</div>
+	
+                    <li><span class="f_r">2011-10-07</span><a class="konw_a" title="童年的时光" target="_blank" href="/photo/show.php?itemid=4"><span style="color:#800000">童年的时光</span></a></li>
+                    <li><span class="f_r">2011-10-07</span><a class="konw_a" title="童年的时光" target="_blank" href="/photo/show.php?itemid=4"><span style="color:#800000">童年的时光</span></a></li>
+                    <li><span class="f_r">2011-10-07</span><a class="konw_a" title="童年的时光" target="_blank" href="/photo/show.php?itemid=4"><span style="color:#800000">童年的时光</span></a></li>
 
-<div class="m b10"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--精彩专题 end-->
+	
+	<div class="m_n f_l">&nbsp;</div>
+	
+	<!--招商代理 begin-->
+	<div class="m_r_2 f_l">
+		<div class="modBoxA">
+			<div class="thA thA_bg"><span class="mark"><a href="#">招商代理</a></span><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+		
+			<div class="box_body c_b">
+				<div class="headline">
+					<h2><a target="_blank" href="#"><span>北京母婴科技特约招商-期待你的加入</span></a></h2>
+<div style="padding-left:5px;padding-right:5px;padding-bottom:15px;padding-top:9px; line-height:18px;">&nbsp;&nbsp;&nbsp;&nbsp;北京母婴科技特约招商-期待你的加入 我们是一家成熟的公司 有着稳定的市场在北京 上海 大连 香港 广州 我们都有 分公司 ...</div>
+						</div>
+				<table width="100%" cellspacing="2" cellpadding="2" class="newsr">
+				<tbody><tr>
+					<td width="120" valign="top" class="imb">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td width="100%" valign="top">
+								<table width="100%">
+<tr align="center"><td width="100%" valign="top"><a href="/invest/show.php?itemid=4"><img src="/file/upload/201110/07/11-00-24-46-3.jpg" width="120" height="90" alt="北京母婴科技特约招商-期待你的加入"/></a>
+</td>
+</tr></table>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</td>
+		
+					<td valign="top">
+                        <ul>
+     <li>
+     <a href="/invest/show.php?itemid=4" title="北京母婴科技特约招商-期待你的加入">&raquo;北京母婴科技特约招商-期..</a>
+   </li>
+     <li>
+     <a href="/invest/show.php?itemid=3" title="液压机液压机液压机液压机液压机">&raquo;液压机液压机液压机液压机..</a>
+   </li>
+     <li>
+     <a href="/invest/show.php?itemid=2" title="供应电磁换向阀">&raquo;供应电磁换向阀</a>
+   </li>
+     <li>
+     <a href="/invest/show.php?itemid=1" title="angf公司 招聘笔记本代理">&raquo;angf公司 招聘笔记本代理..</a>
+   </li>
+  </ul>					</td>
+				</tr></tbody></table>
+				<div class="li_dot f_gray">
+					<ul>
+						<ul>
+	<li>
+	<span class="f_r">2011-10-07</span>
+	        <a href="/invest/show.php?itemid=4" target="_blank" title="北京母婴科技特约招商-期待你的加入" class="konw_a">北京母婴科技特约招商-期待你的加入</a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-07</span>
+	        <a href="/invest/show.php?itemid=1" target="_blank" title="angf公司 招聘笔记本代理" class="konw_a">angf公司 招聘笔记本代理</a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-07</span>
+	        <a href="/invest/show.php?itemid=2" target="_blank" title="供应电磁换向阀" class="konw_a">供应电磁换向阀</a>
+        </li>
+	<li>
+	<span class="f_r">2011-10-07</span>
+	        <a href="/invest/show.php?itemid=3" target="_blank" title="液压机液压机液压机液压机液压机" class="konw_a">液压机液压机液压机液压机液压机</a>
+        </li>
+	
+</ul>
+	
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--招商代理 end-->
+	
+	<div class="m_n f_l">&nbsp;</div>
+	
+
+	<!--行业会展 begin-->
+	<div class="m_r_3 f_l">
+		<div class="modBoxA">
+			<div class="thA thA_bg"><span class="mark"><a href="#">最新专题</a></span><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body c_b">
+				<div style="margin-bottom:5px;" class="headline">
+              
+					<h2><span>行业最新展会报道</span></h2>
+					<ul>
+                    <li class="px11">
+ <a href="/exhibit/show.php?itemid=5" target="_blank"><span> 2011中国国际皮革展三展联映</span></a>
+</li>
+<li class="px11">
+ <a href="/exhibit/show.php?itemid=4" target="_blank"><span> 2011中国（郑州）国际箱包皮具手袋展览会暨“名...</span></a>
+</li>
+<li class="px11">
+ <a href="/exhibit/show.php?itemid=3" target="_blank"><span> 2011中国青岛国际酒饮类包装及加工机械设备...</span></a>
+</li>
+<li class="px11">
+ <a href="/exhibit/show.php?itemid=2" target="_blank"><span> 2010中国糖果文化节、第七届中国国际甜食及...</span></a>
+</li>
+<li class="px11">
+ <a href="/exhibit/show.php?itemid=1" target="_blank"><span> 2010中国（广州）国际茶业博览会...</span></a>
+</li>
+					</ul>		
+				</div>
+				
+				<div class="newsr2"></div>
+				
+				<table width="100%" cellspacing="2" cellpadding="2"><tbody><tr><td valign="top" class="imb"><table width="100%"></table></td></tr></tbody></table>
+				
+				<div class="li_dot f_gray">
+					<ul>
+						<li title=""><span class="f_r">[求购]</span> <a href="/buy/show.php?itemid=4">求购二手自行车 - 100元</a> </li>
+<li title=""><span class="f_r">[求购]</span> <a href="/buy/show.php?itemid=3">致远求购NikonD300S,D700，D3X单反相机镜头 - 9999元</a> </li>
+<li title=""><span class="f_r">[求购]</span> <a href="/buy/show.php?itemid=2"><span style="color:#000000">我想求购一台2收笔记本</span></a> </li>
+<li title=""><span class="f_r">[求购]</span> <a href="/buy/show.php?itemid=1">我想求购一太液压机</a> </li>
+                        <li title="">
+                        <span class="f_r">[求购]</span><a href="/buy/show.php?itemid=2"><span style="color:#000000">我想求购一台2收笔记本</span></a>
+                        </li>
+                            <li title="">
+                        <span class="f_r">[求购]</span><a href="/buy/show.php?itemid=2"><span style="color:#000000">我想求购一台2收笔记本</span></a>
+                        </li>
+                            <li title="">
+                        <span class="f_r">[求购]</span><a href="/buy/show.php?itemid=2"><span style="color:#000000">我想求购一台2收笔记本</span></a>
+                        </li>
+
+					</ul>			
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--行业会展 end-->
+	<div class="clear"></div>
+</div>	
+<!--信息中心con end-->
+
+
+
+
+
+<!--网上商城title begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="title_box2 white">
+		<div class="title_box2_1">
+			<a href="/sell/" class="fr">更多&gt;&gt;</a> 
+			<span class="fr p0_30"></span> 
+		</div>
+	</div>
+</div>
+<!--网上商城title end-->
+
+
+
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b1"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+					     	<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b2"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+						<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b3"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b4"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b5"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b6"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b7"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+
+
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b8"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+
+
+<!--设计鉴赏 begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 wj_b9"><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=7"><img src="/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="135" height="100" alt="供应轴向柱塞泵 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=7">供应轴向柱塞泵</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=6"><img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="135" height="100" alt="供应电磁换向阀 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=5"><img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="135" height="100" alt="供应线圈体 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=4"><img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="135" height="100" alt="供应放顶煤液压支架用缸 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+   </ul>
+</td><td valign="top">  <ul>
+    <li class="protu">
+       <a href="/sell/show.php?itemid=3"><img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="135" height="100" alt="液压机液压机液压机液压机液压机 (图)"/></a>
+    </li>
+    <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+   </ul>
+</td>							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--设计鉴赏 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--设计鉴赏选项卡 begin-->
+<!--script for 设计鉴赏-->
+<script type="text/javascript">
+function thbb(i){
+	for(j=0;j<9;j++){
+		if(j!=i){
+			document.getElementById("thbb"+j).className="thbbno";
+			document.getElementById("thumb"+j).style.display="none";
+		}else{
+			document.getElementById("thbb"+i).className="thbbhover";
+			document.getElementById("thumb"+i).style.display="block";
+		}
+	}
+}
+</script>
+<!--script for 设计鉴赏-->
 
 <div class="m">
-	<div class="m_l f_l">
-				<link rel="stylesheet" type="text/css" href="/skin/default/catalog.css" />		<div class="catalog_menu">
-			<div class="f_r"><a href="/member/my.php?action=add&mid=5" target="_blank" id="iadd"><img src="/skin/default/image/btn_add.gif" width="81" height="20" title="发布信息" alt="" onmouseover="this.src='/skin/default/image/btn_add_on.gif';" onmouseout="this.src='/skin/default/image/btn_add.gif';"/></a></div>
-			<div>
-				<ul>
-					<li id="catalog_0" class="catalog_on" onclick="catalog(0);">供应</li>
-					<li id="catalog_1" class="catalog_li" onclick="catalog(1);">求购</li>
-					<li id="catalog_2" class="catalog_li" onclick="catalog(2);">公司</li>
-				</ul>
-			</div>
-		</div>
-				<div class="catalog_letter">
-			<div>拼音索引</div>
-			<ul>
-							<li id="index_a" class="catalog_letter_li" onmouseover="index_timer('a');" onmouseout="index_out();">a</li>
-							<li id="index_b" class="catalog_letter_li" onmouseover="index_timer('b');" onmouseout="index_out();">b</li>
-							<li id="index_c" class="catalog_letter_li" onmouseover="index_timer('c');" onmouseout="index_out();">c</li>
-							<li id="index_d" class="catalog_letter_li" onmouseover="index_timer('d');" onmouseout="index_out();">d</li>
-							<li id="index_e" class="catalog_letter_li" onmouseover="index_timer('e');" onmouseout="index_out();">e</li>
-							<li id="index_f" class="catalog_letter_li" onmouseover="index_timer('f');" onmouseout="index_out();">f</li>
-							<li id="index_g" class="catalog_letter_li" onmouseover="index_timer('g');" onmouseout="index_out();">g</li>
-							<li id="index_h" class="catalog_letter_li" onmouseover="index_timer('h');" onmouseout="index_out();">h</li>
-							<li id="index_i" class="catalog_letter_li" onmouseover="index_timer('i');" onmouseout="index_out();">i</li>
-							<li id="index_j" class="catalog_letter_li" onmouseover="index_timer('j');" onmouseout="index_out();">j</li>
-							<li id="index_k" class="catalog_letter_li" onmouseover="index_timer('k');" onmouseout="index_out();">k</li>
-							<li id="index_l" class="catalog_letter_li" onmouseover="index_timer('l');" onmouseout="index_out();">l</li>
-							<li id="index_m" class="catalog_letter_li" onmouseover="index_timer('m');" onmouseout="index_out();">m</li>
-							<li id="index_n" class="catalog_letter_li" onmouseover="index_timer('n');" onmouseout="index_out();">n</li>
-							<li id="index_o" class="catalog_letter_li" onmouseover="index_timer('o');" onmouseout="index_out();">o</li>
-							<li id="index_p" class="catalog_letter_li" onmouseover="index_timer('p');" onmouseout="index_out();">p</li>
-							<li id="index_q" class="catalog_letter_li" onmouseover="index_timer('q');" onmouseout="index_out();">q</li>
-							<li id="index_r" class="catalog_letter_li" onmouseover="index_timer('r');" onmouseout="index_out();">r</li>
-							<li id="index_s" class="catalog_letter_li" onmouseover="index_timer('s');" onmouseout="index_out();">s</li>
-							<li id="index_t" class="catalog_letter_li" onmouseover="index_timer('t');" onmouseout="index_out();">t</li>
-							<li id="index_u" class="catalog_letter_li" onmouseover="index_timer('u');" onmouseout="index_out();">u</li>
-							<li id="index_v" class="catalog_letter_li" onmouseover="index_timer('v');" onmouseout="index_out();">v</li>
-							<li id="index_w" class="catalog_letter_li" onmouseover="index_timer('w');" onmouseout="index_out();">w</li>
-							<li id="index_x" class="catalog_letter_li" onmouseover="index_timer('x');" onmouseout="index_out();">x</li>
-							<li id="index_y" class="catalog_letter_li" onmouseover="index_timer('y');" onmouseout="index_out();">y</li>
-							<li id="index_z" class="catalog_letter_li" onmouseover="index_timer('z');" onmouseout="index_out();">z</li>
-						</ul>
-		</div>
-				<div class="dsn" id="catalog_index" onmouseout="index_leave(this, event);"></div>
-		<div class="catalog c_b">		
-		<div id="catalog">
-										<table width="100%" cellspacing="0" cellspacing="0">
-						<tr>		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=1" target="_blank" class="px15"><strong>供应默认分类</strong></a>
-					</p>
-				</td>
-								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=4" target="_blank" class="px15"><strong>机械行业</strong></a>
-					</p>
-				</td>
-		</tr>				<tr bgcolor="#FAFCFE">		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=5" target="_blank" class="px15"><strong>服装行业</strong></a>
-					</p>
-				</td>
-								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=6" target="_blank" class="px15"><strong>I T行业</strong></a>
-					</p>
-				</td>
-		</tr>				<tr>		<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=7" target="_blank" class="px15"><strong>物流行业</strong></a>
-					</p>
-				</td>
-								<td valign="top" width="50%" onmouseover="this.style.backgroundColor='#E2F0FB';" onmouseout="this.style.backgroundColor='';">
-		<p>
-			<a href="/sell/list.php?catid=8" target="_blank" class="px15"><strong>陶瓷制作</strong></a>
-					</p>
-				</td>
-		</tr>				</table>		</div>
-		</div>
-		<div class="b10 c_b"></div>
-						<div class="box_head"><div><span class="f_r"><a href="/brand/">更多..</a></span><a href="/brand/"><strong>品牌展示</strong></a></div></div>
-		<div class="box_body">
-		<div class="thumb"><table width="100%">
-</table>
-</div>
-		</div>
-		<div class="b10">&nbsp;</div>
-						<div class="box_head"><div><span class="f_r"><a href="/exhibit/">更多..</a></span><a href="/exhibit/"><strong>行业展会</strong></a></div></div>
-		<div class="box_body li_dot">
-			<table cellpadding="0" cellspacing="0" width="100%">
-			<tr>
-			<td valign="top" width="495">
-								<ul>
-								</ul>			
-			</td>
-			<td> </td>
-			<td valign="top" width="155">
-				<div class="b5">&nbsp;</div>
-				<img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页展会A1"/>				<div class="b5">&nbsp;</div>
-				<img src="skin/default/image/150x60.gif" width="150" height="60" alt="首页展会A2"/>			
-			</td>
-			</tr>
-			</table>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="tab_head">
-		<ul>
-			<li class="tab_2" id="job_t_1" onmouseover="Tb(1, 2, 'job', 'tab');"><a href="/job/">招聘信息</a></li>
-			<li class="tab_1" id="job_t_2" onmouseover="Tb(2, 2, 'job', 'tab');"><a href="/job/">求职简历</a></li>
-		</ul>
-		</div>
-		<div class="box_body">
-			<div id="job_c_1" style="display:">
-			<table cellpadding="3" cellspacing="3" width="100%">
-	
-</table>			</div>
-			<div id="job_c_2" style="display:none">
-			<table cellpadding="3" cellspacing="3" width="100%">
-	
-</table>			</div>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head"><div><span class="f_r"><a href="/photo/">更多..</a></span><a href="/photo/"><strong>图片中心</strong></a></div></div>
-		<div class="box_body">
-		<div class="thumb"><table width="100%">
-</table>
-</div>
-		</div>
-		<div class="b10">&nbsp;</div>
-			</div>
 	<div class="m_n f_l">&nbsp;</div>
-	<div class="m_r f_l">
-
-				<div class="box_head_1"><div><span class="f_r"><a href="/company/news.php?more=1">更多..</a></span><a href="/company/news.php?more=1"><strong>企业新闻</strong></a></div></div>
-		<div class="box_body li_dot f_gray">
-		<ul>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head_1"><div><span class="f_r"><a href="/special/">更多..</a></span><a href="/special/"><strong>最新专题</strong></a></div></div>
-		<div class="box_body li_dot f_gray">
-		<ul>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head_1"><div><span class="f_r"><a href="/quote/">更多..</a></span><a href="/quote/"><strong>行情报价</strong></a></div></div>
-		<div class="box_body li_dot f_gray">
-		<ul>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head_1"><div><span class="f_r"><a href="/invest/">更多..</a></span><a href="/invest/"><strong>招商代理</strong></a></div></div>
-		<div class="box_body li_dot f_gray">
-		<ul>
-<li><span class="f_r">08-28</span><a href="/invest/show.php?itemid=1" target="_blank" title="angf公司 招聘笔记本代理">angf公司 招聘笔记本代理</a></li>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head_1"><div><span class="f_r"><a href="/video/">更多..</a></span><a href="/video/"><strong>推荐视频</strong></a></div></div>
-		<div class="box_body f_gray video">
-		<ul>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				
-		<div class="box_head_1"><div><span class="f_r"><a href="/know/">更多..</a></span><a href="/know/"><strong>行业知道</strong></a></div></div>
-		<div class="box_body li_dot f_gray">
-				<ul>
+	<div class="m_r_14">
+		<div class="modBoxA">
+			<div class="thB2 b13">
+				<ul class="thbb">
+					<li id="thbb0" class="thbbhover" onmouseover="thbb(0);">液压泵</li>
+					<li id="thbb1" class="thbbno" onmouseover="thbb(1);">液压阀</li>
+					<li id="thbb2" class="thbbno" onmouseover="thbb(2);">液压缸</li>
+					<li id="thbb3" class="thbbno" onmouseover="thbb(3);">液压密封</li>
+					<li id="thbb4" class="thbbno" onmouseover="thbb(4);">液压附件</li>
+					<li id="thbb5" class="thbbno" onmouseover="thbb(5);">液压机械</li>
+					<li id="thbb6" class="thbbno" onmouseover="thbb(6);">气功元件</li>
+					<li id="thbb7" class="thbbno" onmouseover="thbb(7);">气源设备</li>
+					<li id="thbb8" class="thbbno" onmouseover="thbb(8);">气缸</li>
 				</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-						
-		<div class="box_head_1"><div><span class="f_r"><a href="/down/">更多..</a></span><a href="/down/"><strong>资料下载</strong></a></div></div>
-		<div class="box_body f_gray">
-		<ul>
-</ul>
-		</div>
-		<div class="b10">&nbsp;</div>
-		
-				<div class="box_head_1"><div><span class="f_r"><a href="/vote/">更多..</a></span><a href="/vote/"><strong>投票调查</strong></a></div></div>
-		<div class="box_body"></div>
-		<div class="b10">&nbsp;</div>
+			
 			</div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb2" id="thumb0" style="display:block;">
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb1" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字二</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字二</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字二</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字二</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字二</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb2" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字三</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字三</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字三</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字三</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字三</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb3" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字四</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字四</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字四</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字四</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字四</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb4" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字五</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字五</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字五</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字五</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字五</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb5" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字六</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字六</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字六</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字六</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字六</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb6" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字七</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字七</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字七</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字七</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字七</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb7" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字八</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字八</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字八</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字八</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字八</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<div class="thumb2" id="thumb8" style="display:none;" >
+						<table width="100%">
+						<tbody>
+						<tr align="center">
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字九</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字九</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字九</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字九</a></li>
+								</ul>
+							</td>
+							
+							<td valign="top">
+								<ul>
+									<li class="protu"><a target="_blank" href="#"><img width="135" height="100" alt=" " src="images/3.jpg"></a></li>
+									<li class="protitle"><a target="_blank" href="#">图片下文字九</a></li>
+								</ul>
+							</td>
+							
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
 </div>
+<!--设计鉴赏 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--网上商城con begin-->
+
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	
+	<!--产品上市 begin-->
+	<div class="m_l f_l">
+		<div class="modBoxA">
+			<div class="thB b12"><span class="mark"><a href="#">产品上市</a></span><span class="f_r_p"><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="box_body2 c_b">
+				<div class="headline">
+					<div class="thumb">
+						<table width="100%">
+						<tbody>
+							<tr align="center">
+								      <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=2">
+	   <img src="/file/upload/201110/02/18-11-46-63-4.jpg.thumb.jpg" width="112" height="" alt="液压设备|液压配件|液压系统 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=2">液压设备|液压配件|液压系统</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=3">
+	   <img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="112" height="" alt="液压机液压机液压机液压机液压机 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=6">
+	   <img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="112" height="" alt="供应电磁换向阀 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=5">
+	   <img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="112" height="" alt="供应线圈体 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=4">
+	   <img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="112" height="" alt="供应放顶煤液压支架用缸 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+    </ul>
+   </td>
+							</tr>
+							<tr align="center">
+								     <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=2">
+	   <img src="/file/upload/201110/02/18-11-46-63-4.jpg.thumb.jpg" width="112" height="" alt="液压设备|液压配件|液压系统 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=2">液压设备|液压配件|液压系统</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=3">
+	   <img src="/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="112" height="" alt="液压机液压机液压机液压机液压机 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=3">液压机液压机液压机液压机液压机</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=6">
+	   <img src="/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="112" height="" alt="供应电磁换向阀 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=6">供应电磁换向阀</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=5">
+	   <img src="/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="112" height="" alt="供应线圈体 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=5">供应线圈体</a></li>
+    </ul>
+   </td>    <td valign="top">    <ul>
+       <li class="protu">
+          <a href="/sell/show.php?itemid=4">
+	   <img src="/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="112" height="" alt="供应放顶煤液压支架用缸 (图)"/>
+	  </a>
+       </li>
+       <li class="protitle"><a href="/sell/show.php?itemid=4">供应放顶煤液压支架用缸</a></li>
+    </ul>
+   </td>
+							</tr>
+						</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--产品上市 end-->
+	
+	<div class="m_n f_l">&nbsp;</div>
+
+	<!--产品导购 begin-->
+	<div class="m_r f_l">
+		<div class="modBoxA">
+			<div class="thB b12"><span class="mark"><a href="#"><strong>产品导购</strong></a></span><span class="f_r_p"><a href="/sell/">更多&gt;&gt;</a></span>
+			</div>
+			<div class="box_body2 c_b">
+				<div class="li_dot f_gray">
+					<ul>
+			        	<ul>
+     <li>
+     <a href="/sell/show.php?itemid=1" title="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">&raquo;戴尔（DELL）STREAK 10 PRO 10..</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=7" title="供应轴向柱塞泵">&raquo;供应轴向柱塞泵</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=4" title="供应放顶煤液压支架用缸">&raquo;供应放顶煤液压支架用缸..</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=5" title="供应线圈体">&raquo;供应线圈体</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=2" title="液压设备|液压配件|液压系统">&raquo;液压设备|液压配件|液压系..</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=3" title="液压机液压机液压机液压机液压机">&raquo;液压机液压机液压机液压机..</a>
+   </li>
+     <li>
+     <a href="/sell/show.php?itemid=6" title="供应电磁换向阀">&raquo;供应电磁换向阀</a>
+   </li>
+  </ul>					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--产品导购 end-->
+	
+	<div class="clear"></div>
+</div>
+<!--网上商城con end-->
+
+
+
 <div class="m">
 	<div class="tab_head">
 	<ul>
@@ -497,11 +1834,16 @@ announcetitle[0] = '暂无公告';
 announcehref[0] = DTPath;
 showannounce();
 </script>
-<div class="m">
+
+
+
+
+
+<div class="m_new">
 	<div class="b10">&nbsp;</div>
 	<div class="foot_search">
 		<div class="foot_search_m" id="foot_search_m">
-		<span id="foot_search_m_5" onclick="setFModule(5)" class="f_b">供应</span> | <span id="foot_search_m_6" onclick="setFModule(6)" class="">求购</span> | <span id="foot_search_m_7" onclick="setFModule(7)" class="">行情</span> | <span id="foot_search_m_4" onclick="setFModule(4)" class="">公司</span> | <span id="foot_search_m_8" onclick="setFModule(8)" class="">展会</span> | <span id="foot_search_m_21" onclick="setFModule(21)" class="">资讯</span> | <span id="foot_search_m_22" onclick="setFModule(22)" class="">招商</span> | <span id="foot_search_m_13" onclick="setFModule(13)" class="">品牌</span> | <span id="foot_search_m_9" onclick="setFModule(9)" class="">人才</span> | <span id="foot_search_m_10" onclick="setFModule(10)" class="">知道</span> | <span id="foot_search_m_11" onclick="setFModule(11)" class="">专题</span> | <span id="foot_search_m_12" onclick="setFModule(12)" class="">图库</span> | <span id="foot_search_m_14" onclick="setFModule(14)" class="">视频</span> | <span id="foot_search_m_15" onclick="setFModule(15)" class="">下载</span> | 		</div>
+		<span id="foot_search_m_23" onclick="setFModule(23)" class="">专业咨询</span> | <span id="foot_search_m_21" onclick="setFModule(21)" class="">厂商资讯</span> | <span id="foot_search_m_4" onclick="setFModule(4)" class="">商家集群</span> | <span id="foot_search_m_6" onclick="setFModule(6)" class="">招标求购</span> | <span id="foot_search_m_22" onclick="setFModule(22)" class="">无界招商</span> | <span id="foot_search_m_8" onclick="setFModule(8)" class="">行业展会</span> | <span id="foot_search_m_7" onclick="setFModule(7)" class="">行情</span> | <span id="foot_search_m_13" onclick="setFModule(13)" class="">品牌</span> | <span id="foot_search_m_9" onclick="setFModule(9)" class="">人才</span> | <span id="foot_search_m_10" onclick="setFModule(10)" class="">知道</span> | <span id="foot_search_m_11" onclick="setFModule(11)" class="">专题</span> | <span id="foot_search_m_12" onclick="setFModule(12)" class="">图库</span> | <span id="foot_search_m_14" onclick="setFModule(14)" class="">视频</span> | <span id="foot_search_m_15" onclick="setFModule(15)" class="">下载</span> | <span id="foot_search_m_5" onclick="setFModule(5)" class="f_b">商品</span> | 		</div>
 		<div>
 		<form id="foot_search" action="/search.php" onsubmit="return Fsearch();">
 		<input type="hidden" name="moduleid" value="5" id="foot_moduleid"/>
@@ -512,7 +1854,7 @@ showannounce();
 	</div>
 	<div class="b10">&nbsp;</div>
 </div>
-<div class="m">
+<div class="m_new">
 	<div class="foot">
 		<div>
 		<a href="/">网站首页</a>
@@ -522,7 +1864,7 @@ showannounce();
 | <a href="/extend/about.html">关于我们</a> 
 		| <a href="/sitemap/">网站地图</a>
 		 | <a href="/link/">友情链接</a>		 | <a href="/guestbook/">网站留言</a>		 | <a href="/ad/">广告服务</a>				</div>
-		&copy;2008-2010 DESTOON B2B SYSTEM All Rights Reserved<br/><span id="powered"><a href="http://www.destoon.com" target="_blank"><strong>Powered by Destoon 3.0</strong></a></span>
+		©2008-2010 DESTOON B2B SYSTEM All Rights Reserved<br/><span id="powered"><a href="http://www.destoon.com" target="_blank"><strong>Powered by Destoon 3.0</strong></a></span>
 	</div>
 </div>
 <script type="text/javascript">

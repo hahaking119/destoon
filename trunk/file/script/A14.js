@@ -1,0 +1,4 @@
+var pics = "http://localhost/file/upload/201111/18/22-31-43-70-1.jpg|http://localhost/file/upload/201110/02/15-56-58-92-1.jpg";
+var links = "http://www.taobao.com|http://www.bing.com";
+var texts = "|";
+document.write('<embed src="http://localhost/file/flash/player.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts=&borderwidth=350&borderheight=425&textheight=0" menu="false" bgcolor="#FFFFFF" quality="high" width="350" height="425" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" extendspage="http://get.adobe.com/flashplayer/"></embed>');

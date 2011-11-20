@@ -1,0 +1,7 @@
+<ul>
+  {loop $tags $i $t}
+   <li>
+     <a href="{$t[linkurl]}"{if $target} target="{$target}"{/if} title="{$t[alt]}">&raquo;{dsubstr($t[title], $length=24, $suffix = '..')}</a>
+   </li>
+  {/loop}
+</ul>

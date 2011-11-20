@@ -1,0 +1,7 @@
+ {loop $tags $i $t}
+      <div class="iTit"> 
+           <a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}>{$t[title]}</a>
+      </div>
+      <div class="iTitcontent"> <a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}>{dsubstr($t[introduce],'124','...')}</a>         </div>
+  {/loop}
+           
