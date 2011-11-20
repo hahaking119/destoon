@@ -1,4 +1,4 @@
-<?php defined('IN_DESTOON') or exit('Access Denied');?><div class="m">
+<?php defined('IN_DESTOON') or exit('Access Denied');?><div class="m_new">
 	<div class="b10">&nbsp;</div>
 	<div class="foot_search">
 		<div class="foot_search_m" id="foot_search_m">
@@ -14,7 +14,7 @@
 	</div>
 	<div class="b10">&nbsp;</div>
 </div>
-<div class="m">
+<div class="m_new">
 	<div class="foot">
 		<div>
 		<a href="<?php echo DT_PATH;?>">网站首页</a>

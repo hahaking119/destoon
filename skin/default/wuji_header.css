@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* global */
+* {word-break:break-all;margin:0 atuo;}
+
+div,form,img,ul,ol,li,dl,dt,dd,p,em,textarea{margin:0;padding:0;border:none;list-style-type:none;}
+.clear{clear:both; font-size:0; line-height:0; height:0; background:none; overflow:hidden;}
+i{FONT-STYLE: normal}
+a:link,a:visited,a:active {color:#333333;text-decoration:none;}
+a:hover {color:#FF6600;}
+
+
+/* links */
+a.w:link,a.w:visited,a.w:active {color:#FFF;text-decoration:none;}
+a.w:hover {color:#f4f3f2;}
+a.b:link,a.b:visited,a.b:active {color:#333;text-decoration:none;}
+a.b:hover {color:#F60;}
+a.g:link,a.g:visited,a.g:active {color:#666;text-decoration:none;}
+a.g:hover {color:#F60;}
+
+
+
+/*top*/
+.top {width:980px;margin:auto;clear:both;color:#666666;background:#f6f6f6 url(image/head_bg.gif) repeat-x;}
+.top_div {padding:7px 3px 6px 3px;}
+.top_right {float:right;}
+.T_red {color:red;}
+.b10 {height:10px;font-size:1px;}
+
+
+/*head*/
+.head {background: none repeat scroll 0 0 #FFFFFF; margin:0px auto;width: 980px;}
+.head_left{ float: left;}
+.logo {height: 90px;text-align: center; width: 218px;}
+.head_right{float: left;overflow: hidden; padding-left:10px; width: 480px;}
+.search-barhead {padding-top:1px;width: 500px;float: left;}
+.searchboxhead {    float: left;    height: 75px;    width: 500px;}
+/* head搜索 */
+.search,.search_t li,.search_t li.cur,.searchC .image_button,.search_bwzd a,.searchC .word,
+.nav,.nav li.currently{background:url(../images/search_bg.gif) no-repeat;}
+.search{width:470px;height:62px;background-position:0 25px;float:left;}
+.search_t{overflow:hidden;clear:both;margin-left:20px;display:inline;float:left;}
+.search_t ul{float:left;}
+.search_t li{width:63px;text-align:center;font:bold 14px/27px "宋体";float:left;margin-left:5px;background-position:-68px -44px;}
+.search_t li.cur{background-position:0 -44px;color:#fff;}
+.search_t li a,.search_t li a:visited{width:63px;display:block;color:#060;}
+.search_t li a:hover{color:#f60;}
+.searchC{background:#f60;}
+.searchC .word{width:378px; height:27px; text-indent:2em; line-height:27px; font-size:14px;background-position:-441px -50px; background-color:#ffffff; float:left; border:1px solid #c60; margin-left:5px; display:inline; margin-top:2px; color:#666;}
+.searchC .image_button{float:left; width:55px; height:23px;cursor:pointer;background-position:-151px -48px;border:none; margin:6px 0 0 14px; display:inline;}
+.search_ph{float:left; margin:5px 0 0 25px; display:inline;}
+.memo {line-height: 22px;margin-left: 10px;text-align: left;}
+.tel {float: left; height: 18px;margin-top:45px;padding: 4px 0 0 8px;width: 60px;}
+.engtxt {display: block;font-family: Verdana,Arial,Helvetica,sans-serif;font-size: 14px}
+

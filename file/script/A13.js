@@ -1,0 +1,1 @@
+document.write('<a href="http://localhost/extend/redirect.php?aid=1" target="_blank"><img src="/skin/default/image/banner.gif" width="468" height="60" alt="Destoon专用VPS主机"/></a>');

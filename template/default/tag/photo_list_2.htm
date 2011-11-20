@@ -1,0 +1,14 @@
+<table width="100%">
+      {if $i%$cols==0}<tr align="center">{/if}
+	 {loop $tags $i $t}
+		
+		<td width="50%" valign="top"><a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}><img src="{$t[thumb]}" width="{$width}" height="{$height}" alt="{$t[alt]} ({$t[items]}图)"/></a>
+			<ul>
+			<li><a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}>{dsubstr($t[title],'14','...')}</a></li>
+			{if $datetype}<li class="px11 f_gray">{timetodate($t['addtime'], $datetype)}</li>{/if}
+			</ul>
+		</td>
+	  {/loop}
+	{if $i%$cols==($cols-1)}</tr>{/if}
+</table>
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}

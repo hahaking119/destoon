@@ -1,0 +1,20 @@
+<table width="100%" cellspacing="2" cellpadding="2">
+    <tbody>
+       <tr><td valign="top" class="imb">
+	<table width="100%">
+	    <tbody>
+		<tr align="center">
+		{loop $tags $i $t}
+		   {if $i%$cols==0} <td width="50%" valign="top">{/if}
+		       <a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}>
+		           <img src="{$t[thumb]}" width="{$width}" height="{$height}" alt="{$t[alt]} ({$t[items]}图)"/>
+		       </a>
+		       <ul><li><a href="{$t[linkurl]}"{if $target} target="{$target}"{/if}>{$t[title]}</a></li></ul>
+		    {if $i%$cols==($cols-1)}</td>{/if}
+		 {/loop}
+	         </tr>
+	     </tbody>
+          </table>
+	</td></tr>
+     </tbody>
+</table>

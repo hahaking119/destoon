@@ -1,5 +1,13 @@
 <?php
 $names = array (
+  '-index_gy_tupian_wujie' => '首页_供应_图片_无界',
+  '-index_photo_wujie' => '首页_图片专题列表_无界',
+  '-index_ptlist_wujie' => '首页_普通列表_无界',
+  '-index_qigou_wujie' => '首页_求购_无界',
+  '-index_zhanhui_wujie' => '首页_无界_展会',
+  '-index_zs_only_wj' => '首页_招商列表_无界',
+  '-wuji_goods_list' => '无界商品列表',
+  'index_list_data_wujie' => '首页_带时间列表_无界',
   'list' => '默认列表',
   'list-brand' => '品牌列表',
   'list-buy' => '求购列表',
@@ -29,6 +37,8 @@ $names = array (
   'list-video' => '视频列表',
   'list-vote' => '投票列表',
   'list-webpage' => '单页列表',
+  'only_content_wj' => '首页_咨询列表_无界',
+  'photo_list_2' => '首页_图片列表_无界',
   'slide' => 'Flash幻灯片',
   'slide-focus' => 'Flash图片播放',
   'table-job' => '表格招聘',

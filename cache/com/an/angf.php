@@ -99,6 +99,27 @@ var DTTour = 'http://localhost/company/tour.php';
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr align="center"><td valign="top" width="20%" height="180">
 <div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=5"><img src="http://localhost/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="100" height="100" alt="供应线圈体"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=5" title="供应线圈体">供应线圈体</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=4"><img src="http://localhost/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="100" height="100" alt="供应放顶煤液压支架用缸"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=4" title="供应放顶煤液压支架用缸">供应放顶煤液压支架用缸</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=3"><img src="http://localhost/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="100" height="100" alt="液压机液压机液压机液压机液压机"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=3" title="液压机液压机液压机液压机液压机">液压机液压机液压机液压机液压机</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
 	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=1"><img src="http://localhost/file/upload/201108/28/09-54-15-89-2.jpg.thumb.jpg" width="100" height="100" alt="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑"/></a>
 	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=1" title="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔（DELL）STREAK 10 PRO 10英寸平板电脑</a></div>
 	<p>2011-08-28</p>
@@ -156,6 +177,41 @@ init_srolltext();
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr align="center"><td valign="top" width="20%" height="180">
 <div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=7"><img src="http://localhost/file/upload/201110/06/14-47-43-75-2.jpg.thumb.jpg" width="100" height="100" alt="供应轴向柱塞泵"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=7" title="供应轴向柱塞泵">供应轴向柱塞泵</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=6"><img src="http://localhost/file/upload/201110/06/14-45-46-89-2.jpg.thumb.jpg" width="100" height="100" alt="供应电磁换向阀"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=6" title="供应电磁换向阀">供应电磁换向阀</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=5"><img src="http://localhost/file/upload/201110/06/14-44-22-43-2.jpg.thumb.jpg" width="100" height="100" alt="供应线圈体"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=5" title="供应线圈体">供应线圈体</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=4"><img src="http://localhost/file/upload/201110/06/14-23-47-62-2.jpg.thumb.jpg" width="100" height="100" alt="供应放顶煤液压支架用缸"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=4" title="供应放顶煤液压支架用缸">供应放顶煤液压支架用缸</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+<td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
+	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=3"><img src="http://localhost/file/upload/201110/06/14-20-23-35-2.jpg.thumb.jpg" width="100" height="100" alt="液压机液压机液压机液压机液压机"/></a>
+	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=3" title="液压机液压机液压机液压机液压机">液压机液压机液压机液压机液压机</a></div>
+	<p>2011-10-06</p>
+</div>
+</td>
+</tr><tr align="center"><td valign="top" width="20%" height="180">
+<div class="thumb" onmouseover="this.className='thumb thumb_on';" onmouseout="this.className='thumb';">
 	<a href="http://localhost/index.php?homepage=angf&file=sell&itemid=1"><img src="http://localhost/file/upload/201108/28/09-54-15-89-2.jpg.thumb.jpg" width="100" height="100" alt="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑"/></a>
 	<div><a href="http://localhost/index.php?homepage=angf&file=sell&itemid=1" title="戴尔（DELL）STREAK 10 PRO 10英寸平板电脑">戴尔（DELL）STREAK 10 PRO 10英寸平板电脑</a></div>
 	<p>2011-08-28</p>
@@ -181,7 +237,7 @@ init_srolltext();
 						&nbsp; | &nbsp;<a href="http://localhost/index.php?homepage=angf&file=page">自定义页</a>
 						&nbsp; | &nbsp;<a href="http://localhost/member/">管理入口</a>
 			<br/>
-			&copy;2011 angf公司 版权所有&nbsp;&nbsp;&nbsp;技术支持：<a href="http://localhost/" target="_blank">Destoon B2B网站管理系统</a>&nbsp;&nbsp;&nbsp;&nbsp;访问量：23		</div>
+			&copy;2011 angf公司 版权所有&nbsp;&nbsp;&nbsp;技术支持：<a href="http://localhost/" target="_blank">Destoon B2B网站管理系统</a>&nbsp;&nbsp;&nbsp;&nbsp;访问量：83		</div>
 	</div>
 </div>
 <script type="text/javascript">$('position').innerHTML = $('pos_show').innerHTML;</script>

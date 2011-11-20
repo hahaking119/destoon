@@ -1,1 +1,1 @@
-<?php defined('IN_DESTOON') or exit('Access Denied'); return array (1 => '0',4 => '0',5 => '0',6 => '1',7 => '0',8 => '0',); ?>
+<?php defined('IN_DESTOON') or exit('Access Denied'); return array (1 => '0',4 => '6',5 => '0',6 => '1',7 => '0',8 => '0',); ?>

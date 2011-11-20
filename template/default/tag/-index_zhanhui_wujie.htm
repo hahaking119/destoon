@@ -1,0 +1,5 @@
+{loop $tags $i $t}
+<li class="px11">
+ <a href="{$t[linkurl]}" target="_blank"><span> {dsubstr($t[title],$length,$suffix = '...')}</span></a>
+</li>
+{/loop}

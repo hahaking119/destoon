@@ -14,6 +14,7 @@
 <link rel="shortcut icon" href="{DT_PATH}favicon.ico"/>
 <link rel="bookmark" href="{DT_PATH}favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="{DT_SKIN}style.css"/>
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}wuji_header.css"/>
 {if $moduleid>4}<link rel="stylesheet" type="text/css" href="{DT_SKIN}{$module}.css"/>{/if}
 {if !DT_DEBUG}<script type="text/javascript">window.onerror= function(){return true;}</script>{/if}
 <script type="text/javascript" src="{DT_PATH}lang/{DT_LANG}/lang.js"></script>
@@ -33,27 +34,136 @@
 		</div>
 	</div>
 </div>
-<div class="m">
-	<div class="f_l logo"><a href="{DT_PATH}"><img src="{if $MODULE[$moduleid][logo]}{DT_SKIN}image/logo_{$moduleid}.gif{elseif $DT[logo]}{$DT[logo]}{else}{DT_SKIN}image/logo.gif{/if}" alt="{$DT[sitename]}"/></a></div>
-	<div class="f_l banner">{ad(13)}</div>
-	<div class="f_l btntool">
-		<a href="{$MODULE[2][linkurl]}"><img src="{DT_SKIN}image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
-		<span>商务中心</span></a>
+
+
+
+<!--head begin-->
+<div class="head">
+	<div class="head_left">
+		<div class="logo ">
+		  <a href="{DT_PATH}">
+           <img src="{if $MODULE[$moduleid][logo]}{DT_SKIN}image/logo_{$moduleid}.gif{elseif $DT[logo]}{$DT[logo]}{else}{DT_SKIN}image/logo.gif{/if}" >
+          </a>
+		</div>
 	</div>
-	<div class="f_l btntool">
-		<a href="{$MODULE[2][linkurl]}{$DT[file_my]}"><img src="{DT_SKIN}image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
-		<span>发布信息</span></a>
+	<div class="head_right">
+		<div class="search-barhead">
+			<div class="searchboxhead">
+				<div class="search">
+					<div class="search_t">
+						<ul>
+							<li {if $moduleid==1 || $moduleid==5} class="cur"{/if}> <a href="{DT_PATH}sell/" title="供应 " >商品</a></li>
+							<li {if $moduleid==6} class="cur"{/if}> <a href="{DT_PATH}buy/"     title="求购" >求购</a></li>
+							<li {if $moduleid==4} class="cur"{/if}> <a href="{DT_PATH}company/" title="公司" >商家</a></li>
+							<li {if $moduleid==21} class="cur"{/if}><a href="{DT_PATH}news/"    title="资讯" >资讯</a></li>
+                            <li {if $moduleid==10} class="cur"{/if}><a href="{DT_PATH}know/"    title="知道" >知道</a></li>
+						</ul>
+						<div class="search_ph">
+                           <a href="{$MODULE[$searchid][linkurl]}search.php" id="destoon_search_m"><img src="{DT_SKIN}image/gaoji_search.jpg" width="80" height="20" align="absmiddle"/></a>
+                        </div>
+					</div>
+					<div class="searchC">
+                    <form id="destoon_search" action="{DT_PATH}search.php" onsubmit="return Dsearch();">
+                    	{if $MODULE[$moduleid][ismenu] && !$MODULE[$moduleid][islink]}
+			             	{php $searchid = $moduleid;}
+				        {else}
+				            {php $searchid = 5;}
+				        {/if}
+                        <input type="hidden" name="moduleid" value="{$searchid}" id="destoon_moduleid"/>	
+                        <input name="kw" id="destoon_kw" type="text" class="word" size="48" value="{if $kw}{$kw}{else}请输入关键字{/if}" onfocus="if(this.value=='请输入关键字') this.value='';"{if $DT[search_tips]} onkeyup="STip(this.value);" autocomplete="off"{/if}/>						
+						<input type="submit" value="" class="image_button" >
+                    </form>
+					</div>
+				</div>
+			</div>
+			<p class="memo">
+                <strong>热门搜索：</strong>
+				 <!--{tag("moduleid=$searchid&table=keyword&condition=moduleid=$searchid and status=3&pagesize=10&order=total_search desc&template=list-search_kw")}-->
+            </p>
+		</div>	
 	</div>
-	<div class="f_l btntool">
-		<a href="{extendurl('spread')}"><img src="{DT_SKIN}image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
-		<span>排名推广</span></a>
-	</div>
+        <div class="f_l btntool">
+            <a href="{$MODULE[2][linkurl]}"><img src="{DT_SKIN}image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
+            <span>商务中心</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="{$MODULE[2][linkurl]}{$DT[file_my]}"><img src="{DT_SKIN}image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
+            <span>发布信息</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="{extendurl('spread')}"><img src="{DT_SKIN}image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
+            <span>排名推广</span></a>
+        </div>
+	<div class="clear"></div>
 </div>
-<div class="m">
+<!--head end-->
+
+
+
+
+
+<!--nav begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="menu_l">&nbsp;</div>
+	<div class="menu_b">
+		<!--mainmenu begin-->
+		<div class="menu">
+	     <ul>
+           <li{if $moduleid<4} class="menuon"{/if}><a href="{DT_PATH}"><span>首页</span></a></li>{loop $MODULE $m}{if $m[ismenu]}<li{if $m[moduleid]==$moduleid} class="menuon"{/if}><a href="{$m[linkurl]}"{if $m[isblank]} target="_blank"{/if}>
+           <span{if $m[style]} style="color:{$m[style]};"{/if}>{$m[name]}</span></a></li>{/if}{/loop}
+         </ul>
+		</div>
+		<!--mainmenu end-->
+		
+		<!-- 小类栏目列表开始 -->
+		<div class="zlm">
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		</div>
+		<!-- 小类栏目列表结束 -->
+	</div>
+	<div class="menu_r">&nbsp;</div>
+	<div class="clear"></div>
+</div>
+<!--nav end-->
+
+
+
+
+<!--<div class="m">
 	<div class="menu_l">&nbsp;</div>
 	<div class="menu_b">
 		<div class="menu">
-		<ul><li{if $moduleid<4} class="menuon"{/if}><a href="{DT_PATH}"><span>首页</span></a></li>{loop $MODULE $m}{if $m[ismenu]}<li{if $m[moduleid]==$moduleid} class="menuon"{/if}><a href="{$m[linkurl]}"{if $m[isblank]} target="_blank"{/if}><span{if $m[style]} style="color:{$m[style]};"{/if}>{$m[name]}</span></a></li>{/if}{/loop}</ul>
+		<ul>
+          <li{if $moduleid<4} class="menuon"{/if}><a href="{DT_PATH}"><span>首页</span></a></li>{loop $MODULE $m}{if $m[ismenu]}<li{if $m[moduleid]==$moduleid} class="menuon"{/if}><a href="{$m[linkurl]}"{if $m[isblank]} target="_blank"{/if}>
+          <span{if $m[style]} style="color:{$m[style]};"{/if}>{$m[name]}</span></a></li>{/if}{/loop}
+        </ul>
 		</div>
 		<div>
 			<div class="search_l">
@@ -80,10 +190,12 @@
 				</form>
 			</div>
 			<div class="search_r">
-				<div id="search_word"><strong>热门搜索：</strong> <!--{tag("moduleid=$searchid&table=keyword&condition=moduleid=$searchid and status=3&pagesize=10&order=total_search desc&template=list-search_kw")}--></div>
+				<div id="search_word"><strong>热门搜索：</strong> <!--{tag("moduleid=$searchid&table=keyword&condition=moduleid=$searchid and status=3&pagesize=10&order=total_search desc&template=list-search_kw")}--><!--</div>
 			</div>
 		</div>
 	</div>
 	<div class="menu_r">&nbsp;</div>
-</div>
+</div>-->
 <div class="m b10">&nbsp;</div>
+
+

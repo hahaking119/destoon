@@ -5,11 +5,11 @@
 <title>关于我们_Destoon B2B网站管理系统</title>
 <meta name="generator" content="Destoon B2B,www.destoon.com"/>
 <meta http-equiv="x-ua-compatible" content="ie=7"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/skin/default/style.css"/>
-<link rel="stylesheet" type="text/css" href="http://localhost/skin/default/my.css"/>
 <link rel="shortcut icon" href="http://localhost/favicon.ico"/>
 <link rel="bookmark" href="http://localhost/favicon.ico"/>
-<script type="text/javascript" src="http://localhost/lang/zh-cn/lang.js"></script>
+<link rel="stylesheet" type="text/css" href="http://localhost/skin/default/style.css"/>
+<link rel="stylesheet" type="text/css" href="http://localhost/skin/default/wuji_header.css"/>
+<script type="text/javascript">window.onerror= function(){return true;}</script><script type="text/javascript" src="http://localhost/lang/zh-cn/lang.js"></script>
 <script type="text/javascript" src="http://localhost/file/script/config.js"></script>
 <script type="text/javascript" src="http://localhost/file/script/common.js"></script>
 <script type="text/javascript" src="http://localhost/file/script/page.js"></script>
@@ -19,43 +19,172 @@
 	<div class="top_div">
 		<div class="f_r" id="destoon_member"></div>
 		<div>
-		<img src="http://localhost/skin/default/image/vip.gif" alt="VIP标识" align="absmiddle"/><a href="http://member.destoon.org/grade.php"><span class="f_red">上网做生意，首选VIP会员</span></a>
+		<img src="http://localhost/skin/default/image/vip.gif" alt="VIP标识" align="absmiddle"/><a href="http://localhost/member/grade.php"><span class="f_red">上网做生意，首选VIP会员</span></a>
 		 | <script type="text/javascript">addFav('收藏本页');</script>
 		 | <a href="http://localhost/wap/">WAP浏览</a>		 | <a href="http://localhost/feed/">RSS订阅</a> <img src="http://localhost/skin/default/image/free.gif" width="23" height="12" alt=""/>		</div>
 	</div>
 </div>
-<div class="m">
-	<div class="f_l logo"><a href="http://localhost/"><img src="http://localhost/skin/default/image/logo.gif" alt="Destoon B2B网站管理系统"/></a></div>
-	<div class="f_l banner"><a href="http://localhost/extend/redirect-htm-aid-1.html" target="_blank"><img src="/skin/default/image/banner.gif" width="468" height="60" alt="Destoon专用VPS主机"/></a></div>
-	<div class="f_l btntool">
-		<a href="http://member.destoon.org/"><img src="http://localhost/skin/default/image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
-		<span>商务中心</span></a>
+
+
+
+<!--head begin-->
+<div class="head">
+	<div class="head_left">
+		<div class="logo ">
+		  <a href="http://localhost/">
+           <img src="http://localhost/skin/default/image/logo.gif" >
+          </a>
+		</div>
 	</div>
-	<div class="f_l btntool">
-		<a href="http://member.destoon.org/my.php"><img src="http://localhost/skin/default/image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
-		<span>发布信息</span></a>
+	<div class="head_right">
+		<div class="search-barhead">
+			<div class="searchboxhead">
+				<div class="search">
+					<div class="search_t">
+						<ul>
+							<li > <a href="http://localhost/sell/" title="供应 " >商品</a></li>
+							<li > <a href="http://localhost/buy/"     title="求购" >求购</a></li>
+							<li > <a href="http://localhost/company/" title="公司" >商家</a></li>
+							<li ><a href="http://localhost/news/"    title="资讯" >资讯</a></li>
+                            <li ><a href="http://localhost/know/"    title="知道" >知道</a></li>
+						</ul>
+						<div class="search_ph">
+                           <a href="search.php" id="destoon_search_m"><img src="http://localhost/skin/default/image/gaoji_search.jpg" width="80" height="20" align="absmiddle"/></a>
+                        </div>
+					</div>
+					<div class="searchC">
+                    <form id="destoon_search" action="http://localhost/search.php" onsubmit="return Dsearch();">
+                    					            				                                <input type="hidden" name="moduleid" value="5" id="destoon_moduleid"/>	
+                        <input name="kw" id="destoon_kw" type="text" class="word" size="48" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>						
+						<input type="submit" value="" class="image_button" >
+                    </form>
+					</div>
+				</div>
+			</div>
+			<p class="memo">
+                <strong>热门搜索：</strong>
+				             </p>
+		</div>	
 	</div>
-	<div class="f_l btntool">
-		<a href="http://localhost/spread/"><img src="http://localhost/skin/default/image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
-		<span>排名推广</span></a>
-	</div>
+        <div class="f_l btntool">
+            <a href="http://localhost/member/"><img src="http://localhost/skin/default/image/btn_biz.gif" width="32" height="32" alt="商务中心"/><br/>
+            <span>商务中心</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="http://localhost/member/my.php"><img src="http://localhost/skin/default/image/btn_edit.gif" width="32" height="32" alt="发布信息"/><br/>
+            <span>发布信息</span></a>
+        </div>
+        <div class="f_l btntool">
+            <a href="http://localhost/spread/"><img src="http://localhost/skin/default/image/btn_word.gif" width="32" height="32" alt="排名推广"/><br/>
+            <span>排名推广</span></a>
+        </div>
+	<div class="clear"></div>
 </div>
-<div class="m">
+<!--head end-->
+
+
+
+
+
+<!--nav begin-->
+<div class="m_wujie">
+	<div class="m_n f_l">&nbsp;</div>
+	<div class="menu_l">&nbsp;</div>
+	<div class="menu_b">
+		<!--mainmenu begin-->
+		<div class="menu">
+	     <ul>
+           <li class="menuon"><a href="http://localhost/"><span>首页</span></a></li><li><a href="http://localhost/zhanye_zixun/">
+           <span>专业咨询</span></a></li><li><a href="http://localhost/news/">
+           <span>厂商资讯</span></a></li><li><a href="http://localhost/company/">
+           <span>商家集群</span></a></li><li><a href="http://localhost/buy/">
+           <span>招标求购</span></a></li><li><a href="http://localhost/sell/">
+           <span>商品</span></a></li><li><a href="http://localhost/quote/">
+           <span>行情</span></a></li><li><a href="http://localhost/exhibit/">
+           <span>展会</span></a></li><li><a href="http://localhost/invest/">
+           <span>招商</span></a></li><li><a href="http://localhost/brand/">
+           <span>品牌</span></a></li><li><a href="http://localhost/job/">
+           <span>人才</span></a></li><li><a href="http://localhost/know/">
+           <span>知道</span></a></li><li><a href="http://localhost/special/">
+           <span>专题</span></a></li><li><a href="http://localhost/photo/">
+           <span>图库</span></a></li><li><a href="http://localhost/video/">
+           <span>视频</span></a></li><li><a href="http://localhost/down/">
+           <span>下载</span></a></li>         </ul>
+		</div>
+		<!--mainmenu end-->
+		
+		<!-- 小类栏目列表开始 -->
+		<div class="zlm">
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		
+			<ul>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+				<li><a target="_blank" href="#">栏目名称</a></li>
+			</ul>
+		</div>
+		<!-- 小类栏目列表结束 -->
+	</div>
+	<div class="menu_r">&nbsp;</div>
+	<div class="clear"></div>
+</div>
+<!--nav end-->
+
+
+
+
+<!--<div class="m">
 	<div class="menu_l">&nbsp;</div>
 	<div class="menu_b">
 		<div class="menu">
-		<ul><li class="menuon"><a href="http://localhost/"><span>首页</span></a></li><li><a href="http://localhost/sell/"><span>供应</span></a></li><li><a href="http://localhost/buy/"><span>求购</span></a></li><li><a href="http://localhost/quote/"><span>行情</span></a></li><li><a href="http://localhost/company/"><span>公司</span></a></li><li><a href="http://localhost/exhibit/"><span>展会</span></a></li><li><a href="http://localhost/news/"><span>资讯</span></a></li><li><a href="http://localhost/invest/"><span>招商</span></a></li><li><a href="http://localhost/brand/"><span>品牌</span></a></li><li><a href="http://localhost/job/"><span>人才</span></a></li><li><a href="http://localhost/know/"><span>知道</span></a></li><li><a href="http://localhost/special/"><span>专题</span></a></li><li><a href="http://localhost/photo/"><span>图库</span></a></li><li><a href="http://localhost/video/"><span>视频</span></a></li><li><a href="http://localhost/down/"><span>下载</span></a></li></ul>
+		<ul>
+          <li class="menuon"><a href="http://localhost/"><span>首页</span></a></li><li><a href="http://localhost/zhanye_zixun/">
+          <span>专业咨询</span></a></li><li><a href="http://localhost/news/">
+          <span>厂商资讯</span></a></li><li><a href="http://localhost/company/">
+          <span>商家集群</span></a></li><li><a href="http://localhost/buy/">
+          <span>招标求购</span></a></li><li><a href="http://localhost/sell/">
+          <span>商品</span></a></li><li><a href="http://localhost/quote/">
+          <span>行情</span></a></li><li><a href="http://localhost/exhibit/">
+          <span>展会</span></a></li><li><a href="http://localhost/invest/">
+          <span>招商</span></a></li><li><a href="http://localhost/brand/">
+          <span>品牌</span></a></li><li><a href="http://localhost/job/">
+          <span>人才</span></a></li><li><a href="http://localhost/know/">
+          <span>知道</span></a></li><li><a href="http://localhost/special/">
+          <span>专题</span></a></li><li><a href="http://localhost/photo/">
+          <span>图库</span></a></li><li><a href="http://localhost/video/">
+          <span>视频</span></a></li><li><a href="http://localhost/down/">
+          <span>下载</span></a></li>        </ul>
 		</div>
 		<div>
 			<div class="search_l">
-																<script type="text/javascript"> var searchid = 5;</script>
+																<script type="text/javascript">var searchid = 5;</script>
 				<div id="search_module" style="display:none;" onmouseout="Dh('search_module');" onmouseover="Ds('search_module');">
-				<div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('供应','5')">供应</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('求购','6')">求购</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('行情','7')">行情</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('公司','4')">公司</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('展会','8')">展会</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('资讯','21')">资讯</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('招商','22')">招商</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('品牌','13')">品牌</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('人才','9')">人才</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('知道','10')">知道</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('专题','11')">专题</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('图库','12')">图库</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('视频','14')">视频</div><div onmouseover="this.className='search_m_div';" onmouseout="this.className='';" onclick="setModule('下载','15')">下载</div>				</div>
+				<a href="javascript:void(0);" onclick="setModule('专业咨询','23')">专业咨询</a><a href="javascript:void(0);" onclick="setModule('厂商资讯','21')">厂商资讯</a><a href="javascript:void(0);" onclick="setModule('商家集群','4')">商家集群</a><a href="javascript:void(0);" onclick="setModule('招标求购','6')">招标求购</a><a href="javascript:void(0);" onclick="setModule('商品','5')">商品</a><a href="javascript:void(0);" onclick="setModule('行情','7')">行情</a><a href="javascript:void(0);" onclick="setModule('展会','8')">展会</a><a href="javascript:void(0);" onclick="setModule('招商','22')">招商</a><a href="javascript:void(0);" onclick="setModule('品牌','13')">品牌</a><a href="javascript:void(0);" onclick="setModule('人才','9')">人才</a><a href="javascript:void(0);" onclick="setModule('知道','10')">知道</a><a href="javascript:void(0);" onclick="setModule('专题','11')">专题</a><a href="javascript:void(0);" onclick="setModule('图库','12')">图库</a><a href="javascript:void(0);" onclick="setModule('视频','14')">视频</a><a href="javascript:void(0);" onclick="setModule('下载','15')">下载</a>				</div>
 				<div id="search_tips" style="display:none;"></div>
 				<form id="destoon_search" action="http://localhost/search.php" onsubmit="return Dsearch();">
 				<input type="hidden" name="moduleid" value="5" id="destoon_moduleid"/>
 				&nbsp;&nbsp;&nbsp;
-				<input type="text" id="destoon_select" class="search_s" value="供应" readonly onfocus="this.blur();" onclick="Ds('search_module');"/>
+				<input type="text" id="destoon_select" class="search_s" value="商品" readonly onfocus="this.blur();" onclick="Ds('search_module');"/>
 				&nbsp;&nbsp;
 				<input name="kw" id="destoon_kw" type="text" class="search_i" value="请输入关键字" onfocus="if(this.value=='请输入关键字') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>
 				&nbsp;&nbsp;
@@ -65,22 +194,25 @@
 				</form>
 			</div>
 			<div class="search_r">
-				<div id="search_word"><strong>热门搜索：</strong> <a href="http://localhost/sell/search-htm-kw-%B9%A9%D3%A6.html">供应</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%C7%F2%C4%A5%BB%FA.html">球磨机</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%BF%E3%D7%D3.html">裤子</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%D4%B2%D7%B6%C7%F2%C4%A5%BB%FA.html">圆锥球磨机</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%CA%E9%B0%FC.html">书包</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%BD%DA%C4%DC%C7%F2%C4%A5%BB%FA.html">节能球磨机</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%B9%A9%D3%A6%B5%F5%B6%A5.html">供应吊顶</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%CE%F7%B0%B2.html">西安</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%B8%C9%CA%BD%C7%F2%C4%A5%BB%FA.html">干式球磨机</a>&nbsp; <a href="http://localhost/sell/search-htm-kw-%CE%C4%BC%FE%B9%F1.html">文件柜</a>&nbsp; </div>
+				<div id="search_word"><strong>热门搜索：</strong> <!--</div>
 			</div>
 		</div>
 	</div>
 	<div class="menu_r">&nbsp;</div>
-</div>
-<div class="m b10">&nbsp;</div><div class="m">
+</div>-->
+<div class="m b10">&nbsp;</div>
+
+
+<div class="m">
 	<table cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 	<td valign="top" class="left_menu">
 		<ul>
 		<li><a href="http://localhost/">网站首页</a></li>
-						<li id="webpage_1"><a href="http://localhost/extend/about.html">关于我们</a></li>
-				<li id="webpage_3"><a href="http://localhost/extend/contact.html">联系方式</a></li>
-				<li id="webpage_4"><a href="http://localhost/extend/agreement.html">使用协议</a></li>
-				<li id="webpage_5"><a href="http://localhost/extend/copyright.html">版权隐私</a></li>
+						<li id="webpage_4"><a href="http://localhost/extend/copyright.html">版权隐私</a></li>
+				<li id="webpage_3"><a href="http://localhost/extend/agreement.html">使用协议</a></li>
+				<li id="webpage_2"><a href="http://localhost/extend/contact.html">联系方式</a></li>
+				<li id="webpage_1"><a href="http://localhost/extend/about.html">关于我们</a></li>
 				</ul>
 	</td>
 	<td width="8"> </td>
@@ -98,11 +230,11 @@
 <script type="text/javascript">
 try {$('webpage_1').style.backgroundColor = '#CDDCE4';}catch (e){}
 </script>
-<div class="m">
+<div class="m_new">
 	<div class="b10">&nbsp;</div>
 	<div class="foot_search">
 		<div class="foot_search_m" id="foot_search_m">
-		<span id="foot_search_m_5" onclick="setFModule(5)" class="f_b">供应</span> | <span id="foot_search_m_6" onclick="setFModule(6)" class="">求购</span> | <span id="foot_search_m_7" onclick="setFModule(7)" class="">行情</span> | <span id="foot_search_m_4" onclick="setFModule(4)" class="">公司</span> | <span id="foot_search_m_8" onclick="setFModule(8)" class="">展会</span> | <span id="foot_search_m_21" onclick="setFModule(21)" class="">资讯</span> | <span id="foot_search_m_22" onclick="setFModule(22)" class="">招商</span> | <span id="foot_search_m_13" onclick="setFModule(13)" class="">品牌</span> | <span id="foot_search_m_9" onclick="setFModule(9)" class="">人才</span> | <span id="foot_search_m_10" onclick="setFModule(10)" class="">知道</span> | <span id="foot_search_m_11" onclick="setFModule(11)" class="">专题</span> | <span id="foot_search_m_12" onclick="setFModule(12)" class="">图库</span> | <span id="foot_search_m_14" onclick="setFModule(14)" class="">视频</span> | <span id="foot_search_m_15" onclick="setFModule(15)" class="">下载</span> | 		</div>
+		<span id="foot_search_m_23" onclick="setFModule(23)" class="">专业咨询</span> | <span id="foot_search_m_21" onclick="setFModule(21)" class="">厂商资讯</span> | <span id="foot_search_m_4" onclick="setFModule(4)" class="">商家集群</span> | <span id="foot_search_m_6" onclick="setFModule(6)" class="">招标求购</span> | <span id="foot_search_m_5" onclick="setFModule(5)" class="f_b">商品</span> | <span id="foot_search_m_7" onclick="setFModule(7)" class="">行情</span> | <span id="foot_search_m_8" onclick="setFModule(8)" class="">展会</span> | <span id="foot_search_m_22" onclick="setFModule(22)" class="">招商</span> | <span id="foot_search_m_13" onclick="setFModule(13)" class="">品牌</span> | <span id="foot_search_m_9" onclick="setFModule(9)" class="">人才</span> | <span id="foot_search_m_10" onclick="setFModule(10)" class="">知道</span> | <span id="foot_search_m_11" onclick="setFModule(11)" class="">专题</span> | <span id="foot_search_m_12" onclick="setFModule(12)" class="">图库</span> | <span id="foot_search_m_14" onclick="setFModule(14)" class="">视频</span> | <span id="foot_search_m_15" onclick="setFModule(15)" class="">下载</span> | 		</div>
 		<div>
 		<form id="foot_search" action="http://localhost/search.php" onsubmit="return Fsearch();">
 		<input type="hidden" name="moduleid" value="5" id="foot_moduleid"/>
@@ -113,22 +245,21 @@ try {$('webpage_1').style.backgroundColor = '#CDDCE4';}catch (e){}
 	</div>
 	<div class="b10">&nbsp;</div>
 </div>
-<div class="m">
+<div class="m_new">
 	<div class="foot">
 		<div>
 		<a href="http://localhost/">网站首页</a>
-		| <a href="http://localhost/extend/about.html">关于我们</a> 
-| <a href="http://localhost/extend/contact.html">联系方式</a> 
+		| <a href="http://localhost/extend/copyright.html">版权隐私</a> 
 | <a href="http://localhost/extend/agreement.html">使用协议</a> 
-| <a href="http://localhost/extend/copyright.html">版权隐私</a> 
+| <a href="http://localhost/extend/contact.html">联系方式</a> 
+| <a href="http://localhost/extend/about.html">关于我们</a> 
 		| <a href="http://localhost/sitemap/">网站地图</a>
-		 | <a href="http://localhost/link/">友情链接</a>		 | <a href="http://localhost/guestbook/">网站留言</a>		 | <a href="http://localhost/ad/">广告服务</a>				| <a href="http://www.miibeian.gov.cn" target="_blank">备案申请中</a>
-				</div>
-		&copy;2008-2010 DESTOON B2B SYSTEM All Rights Reserved<br/><span id="powered"><a href="http://www.destoon.com" target="_blank"><strong>Powered by Destoon 3.0</strong></a></span>
+		 | <a href="http://localhost/link/">友情链接</a>		 | <a href="http://localhost/guestbook/">网站留言</a>		 | <a href="http://localhost/ad/">广告服务</a>				</div>
+		©2008-2010 DESTOON B2B SYSTEM All Rights Reserved<br/><span id="powered"><a href="http://www.destoon.com" target="_blank"><strong>Powered by Destoon 3.0</strong></a></span>
 	</div>
 </div>
 <script type="text/javascript">
 	document.write('<script type="text/javascript" src="http://localhost/api/task.js.php?moduleid=3&html=webpage&itemid=1&refresh='+Math.random()+'.js"></sc'+'ript>');
 </script>
-<!--stats code--></body>
+ </body>
 </html>

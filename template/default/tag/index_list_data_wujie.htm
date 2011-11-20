@@ -1,0 +1,11 @@
+{php global $PROCESS;}
+<ul>
+{loop $tags $k $t}
+	<li>
+	<span class="f_r">{timetodate($t[edittime], $datetype)}</span>
+	{if $t[credit]}<span class="know_credit">{$t[credit]}</span> {/if}
+        <a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}" class="konw_a">{$t[title]}</a>
+        </li>
+{/loop}	
+</ul>
+	
